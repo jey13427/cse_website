@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-ksrce",
-      "name": "KSRCE",
+      "id": "0-main-entrance",
+      "name": "MAIN ENTRANCE",
       "levels": [
         {
           "tileSize": 256,
@@ -24,22 +24,174 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.29433894081869383,
-        "pitch": 0,
+        "yaw": 0.2261275054093268,
+        "pitch": 0.025027672587103922,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 0.2520777911774079,
-          "pitch": -0.012958838799292494,
+          "yaw": 0.2998775703211791,
+          "pitch": 0.07290515640014661,
           "rotation": 0,
-          "target": "41-ksrce-road-1"
+          "target": "1-ksrce-entrance"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.30358000585581024,
+          "pitch": 0.24265012667714636,
+          "title": "KSREI MAIN ENTRANCE",
+          "text": "Welcome to KSR COLLEGE OF ENGINEERING."
+        }
+      ]
+    },
+    {
+      "id": "1-ksrce-entrance",
+      "name": "KSRCE Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.08144869842640112,
+        "pitch": -0.05621784253181872,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.020975325882218954,
+          "pitch": 0.08697121048054868,
+          "rotation": 0,
+          "target": "2-way-to-a-block"
+        },
+        {
+          "yaw": -3.114137784207582,
+          "pitch": 0.06730991456993962,
+          "rotation": 0,
+          "target": "0-main-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-a-block-entrance",
+      "id": "2-way-to-a-block",
+      "name": "Way To A-Block",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.18120046622539654,
+        "pitch": -0.09404256990549698,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.9763061832261357,
+          "pitch": 0.03614052668192258,
+          "rotation": 0,
+          "target": "3-ksrce-ground"
+        },
+        {
+          "yaw": 0.14629326890930727,
+          "pitch": 0.061812311393943276,
+          "rotation": 0,
+          "target": "4-a-block-entrance"
+        },
+        {
+          "yaw": -3.008844803642061,
+          "pitch": 0.09121685730604767,
+          "rotation": 0,
+          "target": "1-ksrce-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-ksrce-ground",
+      "name": "KSRCE Ground",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.09581753985609,
+        "pitch": -0.1134347708165997,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.7195549943408164,
+          "pitch": 0.0014348895087117342,
+          "rotation": 0,
+          "target": "2-way-to-a-block"
+        },
+        {
+          "yaw": -2.4498948878590916,
+          "pitch": 0.09214587469442392,
+          "rotation": 0,
+          "target": "19-indoor-entrance"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.80125581579372,
+          "pitch": 0.13765759535029432,
+          "title": "KSRCE PLAYGROUND",
+          "text": "THE AVAILABLE FACILITIES :&nbsp;<div>1. Athletics (Standard 400m Track with 8 Lanes) and Crickrt Fiels 1 No.</div><div>2. Foot Ball Field 2 Nos</div><div>3. Hockey Field 2 Nos</div><div>4. Volley Ball Court 2 Nos</div><div>5. Basket Ball Court with Wooden Flooring &amp; Flood Lights 1 no.</div><div>6. Basket Ball Court with FLood Lights 1 No.</div><div>7. Tennis Court with Flood Lights 2 Nos</div><div>8. Ball Badminton Court 2 Nos</div><div>9. Kabaddi Court 2 Nos</div>"
+        }
+      ]
+    },
+    {
+      "id": "4-a-block-entrance",
       "name": "A-Block Entrance",
       "levels": [
         {
@@ -62,16 +214,42 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.30659310596658607,
+        "pitch": -0.15076603224440177,
+        "fov": 1.530658530752525
       },
-      "linkHotspots": [],
-      "infoHotspots": []
+      "linkHotspots": [
+        {
+          "yaw": -0.3114398189698768,
+          "pitch": 0.07457184040958786,
+          "rotation": 0,
+          "target": "5-a-block-inner-view"
+        },
+        {
+          "yaw": -1.9056696996933606,
+          "pitch": 0.10241376200686325,
+          "rotation": 0,
+          "target": "2-way-to-a-block"
+        },
+        {
+          "yaw": 1.2421886215948348,
+          "pitch": 0.060539195392291134,
+          "rotation": 0,
+          "target": "8-way-to-b-block"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.3136804321951576,
+          "pitch": 0.23900670419064696,
+          "title": "KSRCE A BLOCK",
+          "text": "<font face=\"helvetica\"><span style=\"font-size: 18.6667px;\">KSR COLLEGE OF ENGINEERING is an autonomous college affiliated to Anna University, Chennai.</span></font>"
+        }
+      ]
     },
     {
-      "id": "2-a-block-entrance-1",
-      "name": "A-Block Entrance-1",
+      "id": "5-a-block-inner-view",
+      "name": "A-Block Inner View",
       "levels": [
         {
           "tileSize": 256,
@@ -93,35 +271,48 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.32579479370560804,
-        "pitch": -0.07921605084028016,
+        "yaw": -0.22107503858594413,
+        "pitch": -0.09965890267003097,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -0.3070470141271002,
-          "pitch": -0.020466394271217325,
+          "yaw": -0.6191013295473375,
+          "pitch": -0.19534147266388224,
           "rotation": 0,
-          "target": "3-a-block"
+          "target": "7-cecs-a1-laboratory"
         },
         {
-          "yaw": -1.892922634130624,
-          "pitch": 0.03153895074852642,
+          "yaw": -2.071524769143471,
+          "pitch": -0.09266707147721576,
           "rotation": 0,
-          "target": "53-way-to-ksrce"
+          "target": "6-english-laboratory"
         },
         {
-          "yaw": 1.2544836589839168,
-          "pitch": -0.015141550697936879,
+          "yaw": 0.1226422626272825,
+          "pitch": 0.021876083854753148,
+          "rotation": 17.27875959474387,
+          "target": "4-a-block-entrance"
+        },
+        {
+          "yaw": -2.7222348066576654,
+          "pitch": 0.009258521128073127,
           "rotation": 0,
-          "target": "50-way-to-b-block"
+          "target": "11-b-block-g-floor"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": 0.6337467719955008,
+          "pitch": 0.033415455517895154,
+          "title": "KSRCE A BLOCK",
+          "text": "<font face=\"helvetica\"><span style=\"font-size: 18.6667px;\">It was started in the year 2001 by our Founder &amp; Chairman Dr.K.S.Rangasamy MJF., and Currently this institution is managed by the younger son of our Founder &amp; Chairman, Thiru R.Srinivasan BBM.,MISTE.,He act as the Chairman Cum Managing Trustee of this institution.</span></font><div><font face=\"helvetica\"><span style=\"font-size: 18.6667px;\"><br></span></font></div><div><font face=\"helvetica\"><span style=\"font-size: 18.6667px;\"><br></span></font></div><div><font face=\"helvetica\"><span style=\"font-size: 18.6667px;\">Dr.P.Senthilkumar</span></font></div><div><font face=\"helvetica\"><span style=\"font-size: 18.6667px;\">Principal-KSRCE</span></font></div>"
+        }
+      ]
     },
     {
-      "id": "3-a-block",
-      "name": "A-Block",
+      "id": "6-english-laboratory",
+      "name": "English Laboratory",
       "levels": [
         {
           "tileSize": 256,
@@ -143,40 +334,154 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.2908882086657165,
-        "pitch": -0.10732497210618064,
+        "yaw": 1.2813851048875886,
+        "pitch": 0.20828336696541605,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -0.5020942463900564,
-          "pitch": -0.16593464760924626,
+          "yaw": -2.219441343043105,
+          "pitch": 0.12374736441276823,
           "rotation": 0,
-          "target": "18-a-block-lab"
-        },
-        {
-          "yaw": -2.044313587723803,
-          "pitch": -0.13699956282851744,
-          "rotation": 0,
-          "target": "54-english-lab"
-        },
-        {
-          "yaw": 0.0733679014525741,
-          "pitch": -0.02256503576892932,
-          "rotation": 10.995574287564278,
-          "target": "2-a-block-entrance-1"
-        },
-        {
-          "yaw": -2.6844910322014535,
-          "pitch": -0.17182345085105943,
-          "rotation": 0,
-          "target": "4-b-block-entrance"
+          "target": "5-a-block-inner-view"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-b-block-entrance",
+      "id": "7-cecs-a1-laboratory",
+      "name": "CECS A1 Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.5739636413769151,
+        "pitch": 0.18963434921017708,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.8009571910073507,
+          "pitch": 0.06059352682644459,
+          "rotation": 0,
+          "target": "5-a-block-inner-view"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "8-way-to-b-block",
+      "name": "Way To B-Block",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.6591051426992802,
+        "pitch": 0.01277678239359048,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.4855168129716532,
+          "pitch": 0.08456512874371569,
+          "rotation": 0,
+          "target": "4-a-block-entrance"
+        },
+        {
+          "yaw": 1.6879555262020256,
+          "pitch": 0.08954949949577973,
+          "rotation": 0,
+          "target": "9-b-block-road"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "9-b-block-road",
+      "name": "B-Block Road",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.9431310705789935,
+        "pitch": 0.06899462492539499,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.1563656634194004,
+          "pitch": 0.10219379611018731,
+          "rotation": 0,
+          "target": "8-way-to-b-block"
+        },
+        {
+          "yaw": 0.5632964846730566,
+          "pitch": 0.0661679671211246,
+          "rotation": 0,
+          "target": "10-b-block-entrance"
+        },
+        {
+          "yaw": 2.0201078838921323,
+          "pitch": 0.062394870798545554,
+          "rotation": 0,
+          "target": "13-way-to-d-block"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-b-block-entrance",
       "name": "B-Block Entrance",
       "levels": [
         {
@@ -199,35 +504,29 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.8398951586267636,
-        "pitch": -0.11499104154234452,
+        "yaw": -0.28313118976796403,
+        "pitch": -0.038330347180789204,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 0.8705997419920593,
-          "pitch": -0.2305330779670065,
+          "yaw": -0.2735252102425605,
+          "pitch": 0.025730830585228404,
           "rotation": 0,
-          "target": "11-civil-lab"
+          "target": "11-b-block-g-floor"
         },
         {
-          "yaw": -2.2916676402505747,
-          "pitch": 0.05023566873914831,
+          "yaw": 2.548049335999668,
+          "pitch": 0.07136489397221268,
           "rotation": 0,
-          "target": "5-b-block"
-        },
-        {
-          "yaw": -0.5390106264209393,
-          "pitch": 0.05483048742857832,
-          "rotation": 0,
-          "target": "3-a-block"
+          "target": "9-b-block-road"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-b-block",
-      "name": "B-Block",
+      "id": "11-b-block-g-floor",
+      "name": "B-Block G-Floor",
       "levels": [
         {
           "tileSize": 256,
@@ -249,29 +548,35 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.19392547244381575,
-        "pitch": -0.05621784253181161,
+        "yaw": 0.8765431354460418,
+        "pitch": -0.01788749535102596,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -0.2839934903106318,
-          "pitch": 0.015393907500103055,
+          "yaw": -0.5357257419656669,
+          "pitch": 0.08150500108536107,
           "rotation": 0,
-          "target": "4-b-block-entrance"
+          "target": "5-a-block-inner-view"
         },
         {
-          "yaw": 2.994757946964951,
-          "pitch": 0.03125477221953865,
+          "yaw": 0.8637410751846382,
+          "pitch": 0.13172810639600385,
           "rotation": 0,
-          "target": "6-b-blockk"
+          "target": "12-cecs-b-laboratory"
+        },
+        {
+          "yaw": -2.301936240413541,
+          "pitch": 0.1753354319170235,
+          "rotation": 0,
+          "target": "10-b-block-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "6-b-blockk",
-      "name": "B-Blockk",
+      "id": "12-cecs-b-laboratory",
+      "name": "CECS B Laboratory",
       "levels": [
         {
           "tileSize": 256,
@@ -293,129 +598,23 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 1.9288907803215745,
-        "pitch": -0.07154998140412516,
+        "yaw": 2.9241291853550795,
+        "pitch": 0.38841418476524225,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 0.3272112599533479,
-          "pitch": -0.03424813905294677,
-          "rotation": 0,
-          "target": "5-b-block"
-        },
-        {
-          "yaw": 1.9734518667929164,
-          "pitch": 0.09979242388867071,
-          "rotation": 0,
-          "target": "40-ksrce-road"
-        },
-        {
-          "yaw": -1.176126226525957,
-          "pitch": 0.07795033906554139,
-          "rotation": 0,
-          "target": "50-way-to-b-block"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "7-c-block-3-floor",
-      "name": "C-Block 3-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -1.0530153153699153,
-        "pitch": -0.07921605084027838,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.16428714922498244,
-          "pitch": 0.2386885556202305,
-          "rotation": 0.7853981633974483,
-          "target": "48-virtusa-lab"
-        },
-        {
-          "yaw": -1.9269313506815315,
-          "pitch": 0.24737872959020635,
-          "rotation": 5.497787143782138,
-          "target": "8-c-block-cse-lab"
-        },
-        {
-          "yaw": 1.518279134170652,
-          "pitch": 0.2133056290203168,
-          "rotation": 3.141592653589793,
-          "target": "9-c-block-entrance"
-        },
-        {
-          "yaw": 2.7312006798531403,
-          "pitch": 0.22411231246169727,
-          "rotation": 3.141592653589793,
-          "target": "9-c-block-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "8-c-block-cse-lab",
-      "name": "C-Block CSE-Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.1679969189910544,
-          "pitch": 0.03454225404981237,
+          "yaw": -0.2773293471480489,
+          "pitch": 0.020177233776934145,
           "rotation": 4.71238898038469,
-          "target": "7-c-block-3-floor"
+          "target": "11-b-block-g-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "9-c-block-entrance",
-      "name": "C-Block Entrance",
+      "id": "13-way-to-d-block",
+      "name": "Way to D-Block",
       "levels": [
         {
           "tileSize": 256,
@@ -437,35 +636,29 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.9948376736367628,
-        "pitch": -0.24830029022456301,
+        "yaw": 1.0001555179342425,
+        "pitch": 0.017294751651036222,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 1.7542468978051646,
-          "pitch": 0.033807132593029365,
+          "yaw": -2.146091821291243,
+          "pitch": 0.11098484264373809,
           "rotation": 0,
-          "target": "17-energy-park"
+          "target": "9-b-block-road"
         },
         {
-          "yaw": -0.3562634173288295,
-          "pitch": -0.058401717983070256,
+          "yaw": 0.9680362984403832,
+          "pitch": 0.10998916190093233,
           "rotation": 0,
-          "target": "43-library-g-floor"
-        },
-        {
-          "yaw": -1.3694823413803423,
-          "pitch": -0.10784703913838278,
-          "rotation": 0,
-          "target": "7-c-block-3-floor"
+          "target": "14-d-block-road"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "10-chemistry-lab",
-      "name": "Chemistry lab",
+      "id": "14-d-block-road",
+      "name": "D-Block Road",
       "levels": [
         {
           "tileSize": 256,
@@ -487,180 +680,28 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.005817764173311701,
-        "pitch": 0.3781927588503766,
+        "yaw": 1.3621981930325244,
+        "pitch": 0.04599641661693887,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 2.7430997454605937,
-          "pitch": 0.04459492449752389,
-          "rotation": 5.497787143782138,
-          "target": "22-f-block-1-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "11-civil-lab",
-      "name": "Civil Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.7249561381053597,
-        "pitch": -0.072771847065912,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.3079486713295765,
-          "pitch": 0.028316032310113926,
-          "rotation": 4.71238898038469,
-          "target": "4-b-block-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "12-classroom",
-      "name": "ClassRoom",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.8397273793939917,
-          "pitch": 0.0931705237024758,
-          "rotation": 1.5707963267948966,
-          "target": "34-hod-cabin-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "13-conference-hall",
-      "name": "Conference Hall",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.3777936680805194,
-          "pitch": 0.0785357596111318,
-          "rotation": 0.7853981633974483,
-          "target": "34-hod-cabin-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "14-d-block-entrance-2",
-      "name": "D-Block Entrance (2)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.3897901996120652,
-        "pitch": -0.017887495351033067,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.536463529040761,
-          "pitch": 0.15492873957216702,
-          "rotation": 7.0685834705770345,
-          "target": "16-d-block-lab"
-        },
-        {
-          "yaw": -2.7389955313741723,
-          "pitch": 0.04551903512500388,
+          "yaw": -0.16414361039250203,
+          "pitch": 0.06403909375002215,
           "rotation": 0,
           "target": "15-d-block-entrance"
         },
         {
-          "yaw": 0.388475484572675,
-          "pitch": -0.003856208138149242,
+          "yaw": 1.3750486901169054,
+          "pitch": 0.058820912477733245,
           "rotation": 0,
-          "target": "17-energy-park"
+          "target": "18-way-to-canteen"
+        },
+        {
+          "yaw": -1.7852672604137467,
+          "pitch": 0.08908110307621797,
+          "rotation": 0,
+          "target": "13-way-to-d-block"
         }
       ],
       "infoHotspots": []
@@ -689,29 +730,29 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 0.32967330315448606,
-        "pitch": -0.32708562927600404,
+        "yaw": 0.3219217404644965,
+        "pitch": -0.2861999256165042,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 0.27005916913748607,
-          "pitch": -0.04950621231825636,
+          "yaw": 0.2791014519928243,
+          "pitch": 0.01833898620983021,
           "rotation": 0,
-          "target": "14-d-block-entrance-2"
+          "target": "16-d-block-g-floor"
         },
         {
-          "yaw": -2.867227763426616,
-          "pitch": 0.06953620773663971,
+          "yaw": -2.830315990379461,
+          "pitch": 0.12951895320462015,
           "rotation": 0,
-          "target": "52-way-to-d-block"
+          "target": "14-d-block-road"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "16-d-block-lab",
-      "name": "D-Block Lab",
+      "id": "16-d-block-g-floor",
+      "name": "D-Block G-Floor",
       "levels": [
         {
           "tileSize": 256,
@@ -733,111 +774,35 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.5481151469595389,
-        "pitch": 0.20624230976310187,
+        "yaw": 0.44021082884745866,
+        "pitch": 0.18143030358903012,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 2.964388734654648,
-          "pitch": 0.11963851857659158,
-          "rotation": 5.497787143782138,
-          "target": "14-d-block-entrance-2"
+          "yaw": 1.3610760566170832,
+          "pitch": 0.2693696623842854,
+          "rotation": 0.7853981633974483,
+          "target": "17-d-block--cse-lab"
+        },
+        {
+          "yaw": -2.7289509896187667,
+          "pitch": 0.17301006024147547,
+          "rotation": 0,
+          "target": "15-d-block-entrance"
+        },
+        {
+          "yaw": 0.4181029203817648,
+          "pitch": 0.006812906214289427,
+          "rotation": 0,
+          "target": "46-energy-park"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "17-energy-park",
-      "name": "Energy Park",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.2836855415979063,
-        "pitch": -0.33730705519087323,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.7421038149302994,
-          "pitch": 0.05360993437156658,
-          "rotation": 0,
-          "target": "14-d-block-entrance-2"
-        },
-        {
-          "yaw": 1.2341072690549098,
-          "pitch": -0.023653954464478488,
-          "rotation": 0,
-          "target": "9-c-block-entrance"
-        },
-        {
-          "yaw": 3.0403969213395605,
-          "pitch": 0.012025651761508271,
-          "rotation": 0,
-          "target": "47-view-point"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "18-a-block-lab",
-      "name": "A-Block Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.444320613693555,
-        "pitch": -0.03419914395458257,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.8153532880360208,
-          "pitch": 0.05793431694489648,
-          "rotation": 0,
-          "target": "3-a-block"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "19-faculty-cabin-1",
-      "name": "Faculty Cabin-1",
+      "id": "17-d-block--cse-lab",
+      "name": "D-Block  CSE Lab",
       "levels": [
         {
           "tileSize": 256,
@@ -865,1367 +830,16 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -3.0357763743576704,
-          "pitch": 0.36171245573340727,
-          "rotation": 0,
-          "target": "28-f-block-3-floor-corridor-1"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "20-faculty-cabin-2",
-      "name": "Faculty Cabin-2",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.7314443079289106,
-        "pitch": 0.014103573482742604,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.978346512327553,
-          "pitch": 0.32377862395763835,
-          "rotation": 0.7853981633974483,
-          "target": "25-f-block-2-floor-corridor-"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "21-faculty-cabin-3",
-      "name": "Faculty Cabin-3",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -0.4130612563053333,
-        "pitch": -0.10988032858490371,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.1554062722491345,
-          "pitch": 0.35236318823588597,
-          "rotation": 0,
-          "target": "24-f-block-2-floor-corridor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "22-f-block-1-floor",
-      "name": "F-Block 1-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -2.470631730531373,
-        "pitch": -0.1533213887231284,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.063728612639018,
-          "pitch": 0.1475772970153617,
-          "rotation": 0.7853981633974483,
-          "target": "23-f-block-1-foor-corridor"
-        },
-        {
-          "yaw": -1.469689408014485,
-          "pitch": 0.08810465583691851,
-          "rotation": 0,
-          "target": "10-chemistry-lab"
-        },
-        {
-          "yaw": 0.32365956906223303,
-          "pitch": -0.08630877142629956,
-          "rotation": 0.7853981633974483,
-          "target": "26-f-block-2-floor"
-        },
-        {
-          "yaw": 0.5532178168479884,
-          "pitch": 0.13042119105788608,
-          "rotation": 2.356194490192345,
-          "target": "32-f-block-g-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "23-f-block-1-foor-corridor",
-      "name": "F-Block 1-Foor Corridor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.778048816940073,
-        "pitch": -0.06773236811829975,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.5117566821667836,
-          "pitch": 0.1520780972389879,
-          "rotation": 0.7853981633974483,
-          "target": "44-physics-lab"
-        },
-        {
-          "yaw": 1.6615125447013899,
-          "pitch": -0.003679325943863887,
-          "rotation": 5.497787143782138,
-          "target": "45-r2s-lab"
-        },
-        {
-          "yaw": -2.310175025151196,
-          "pitch": 0.06237299514012129,
-          "rotation": 5.497787143782138,
-          "target": "22-f-block-1-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "24-f-block-2-floor-corridor",
-      "name": "F-BLock 2-Floor Corridor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.037048569827668,
-        "pitch": -0.13543389337210066,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.7269473485094364,
-          "pitch": 0.24805280815998998,
-          "rotation": 0,
-          "target": "21-faculty-cabin-3"
-        },
-        {
-          "yaw": 1.135365038053564,
-          "pitch": 0.08634350322714113,
-          "rotation": 0,
-          "target": "25-f-block-2-floor-corridor-"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "25-f-block-2-floor-corridor-",
-      "name": "F-Block 2-Floor Corridor-",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.444305353683153,
-        "pitch": 0.10558806912528595,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.9532889580254498,
-          "pitch": -0.04303877104022291,
-          "rotation": 5.497787143782138,
-          "target": "20-faculty-cabin-2"
-        },
-        {
-          "yaw": 1.5974523815358035,
-          "pitch": 0.04731306190075735,
-          "rotation": 0,
-          "target": "24-f-block-2-floor-corridor"
-        },
-        {
-          "yaw": -1.5447314041032136,
-          "pitch": 0.08220104265329198,
-          "rotation": 5.497787143782138,
-          "target": "26-f-block-2-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "26-f-block-2-floor",
-      "name": "F-Block 2-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.604256730243602,
-        "pitch": 0.0670184723472822,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.61953122872211,
-          "pitch": 0.09946022288696987,
-          "rotation": 0.7853981633974483,
-          "target": "25-f-block-2-floor-corridor-"
-        },
-        {
-          "yaw": 0.5020003603183287,
-          "pitch": -0.0180112316142349,
-          "rotation": 0.7853981633974483,
-          "target": "30-f-block-3-floor-"
-        },
-        {
-          "yaw": 1.4104180589015876,
-          "pitch": 0.3048316626934575,
-          "rotation": 0,
-          "target": "22-f-block-1-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "27-f-block-3-floor-corridor",
-      "name": "F-Block 3-Floor Corridor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.3575560749129565,
-          "pitch": 0.0080281354616627,
-          "rotation": 5.497787143782138,
-          "target": "55-faculty-cabin-4"
-        },
-        {
-          "yaw": -3.1160760529457825,
-          "pitch": 0.17693096782166506,
-          "rotation": 6.283185307179586,
-          "target": "34-hod-cabin-entrance"
-        },
-        {
-          "yaw": 0.015007275704725487,
-          "pitch": 0.10682247865324435,
-          "rotation": 0,
-          "target": "28-f-block-3-floor-corridor-1"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "28-f-block-3-floor-corridor-1",
-      "name": "F-Block 3-Floor Corridor-1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.506650771931511,
-          "pitch": 0.1718279192597585,
-          "rotation": 5.497787143782138,
-          "target": "19-faculty-cabin-1"
-        },
-        {
-          "yaw": -3.0444643882802715,
-          "pitch": 0.14999414808393752,
-          "rotation": 0,
-          "target": "27-f-block-3-floor-corridor"
-        },
-        {
-          "yaw": -0.4013336955900826,
-          "pitch": 0.1270375346802588,
-          "rotation": 0,
-          "target": "30-f-block-3-floor-"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "29-f-block-3-floor",
-      "name": "F-Block 3-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "30-f-block-3-floor-",
-      "name": "F-Block 3-Floor-",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.9012029289902737,
-          "pitch": 0.1084953665283841,
-          "rotation": 0,
-          "target": "28-f-block-3-floor-corridor-1"
-        },
-        {
-          "yaw": -0.09824361151652283,
-          "pitch": 0.1830507337694769,
-          "rotation": 0.7853981633974483,
-          "target": "26-f-block-2-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "31-f-block-entrance",
-      "name": "F-Block Entrance",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.5286550124340677,
-        "pitch": -0.41067842032922997,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.8726478597929255,
-          "pitch": 0.013480158374310491,
-          "rotation": 0,
-          "target": "32-f-block-g-floor"
-        },
-        {
-          "yaw": -0.33731222605592137,
-          "pitch": 0.01886419747788004,
-          "rotation": 0,
-          "target": "47-view-point"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "32-f-block-g-floor",
-      "name": "F-BLock G-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -1.3805256923275788,
-        "pitch": -0.19676244886134775,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.131431727384051,
-          "pitch": 0.08065330147011807,
-          "rotation": 0.7853981633974483,
-          "target": "22-f-block-1-floor"
-        },
-        {
-          "yaw": -0.464071458526238,
-          "pitch": -0.011545614015807004,
-          "rotation": 0.7853981633974483,
-          "target": "31-f-block-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "33-gym",
-      "name": "Gym",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.6179219543882617,
-        "pitch": -0.05565557871053528,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.741916421610229,
-          "pitch": 0.07006679773116176,
-          "rotation": 0,
-          "target": "38-indoor-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "34-hod-cabin-entrance",
-      "name": "HOD CABIN ENTRANCE",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.170528059192117,
-          "pitch": 0.2684809427608048,
-          "rotation": 0,
-          "target": "35-hod-cabin-hall"
-        },
-        {
-          "yaw": 3.065384711421098,
-          "pitch": 0.14596843223434242,
-          "rotation": 5.497787143782138,
-          "target": "12-classroom"
-        },
-        {
-          "yaw": -1.6632579451384153,
-          "pitch": 0.18709529149997017,
-          "rotation": 0,
-          "target": "27-f-block-3-floor-corridor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "35-hod-cabin-hall",
-      "name": "HOD CABIN HALL",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.03187402376284609,
-          "pitch": 0.05830702178326064,
-          "rotation": 0.7853981633974483,
-          "target": "36-hod-cabin"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "36-hod-cabin",
-      "name": "HOD CABIN",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 3.070315238228546,
-          "pitch": 0.09612956925350957,
-          "rotation": 5.497787143782138,
-          "target": "13-conference-hall"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "37-indoor-court",
-      "name": "Indoor court",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.03524274848678566,
-        "pitch": 0.12219505768765337,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.0402338341376147,
-          "pitch": 0.045268981113878226,
-          "rotation": 0,
-          "target": "38-indoor-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "38-indoor-entrance",
-      "name": "Indoor Entrance",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -0.1628942626508767,
-        "pitch": -0.17887495351030935,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.9539333684095563,
-          "pitch": -0.0036821652318721476,
-          "rotation": 0,
-          "target": "39-ksrce-ground"
-        },
-        {
-          "yaw": 0.5332920192153772,
-          "pitch": -0.11031648790824988,
-          "rotation": 0,
-          "target": "33-gym"
-        },
-        {
-          "yaw": -1.0068363166934216,
-          "pitch": -0.036351091416573666,
-          "rotation": 0,
-          "target": "37-indoor-court"
-        },
-        {
-          "yaw": 2.9546749134926493,
-          "pitch": -0.003003041981127552,
-          "rotation": 1.5707963267948966,
-          "target": "51-way-to-canteen"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "39-ksrce-ground",
-      "name": "KSRCE GROUND",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.7679358983831817,
-        "pitch": -0.10221425914875581,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.7339917329752677,
-          "pitch": -0.02546274125406711,
-          "rotation": 0,
-          "target": "53-way-to-ksrce"
-        },
-        {
-          "yaw": -2.5081445012390002,
-          "pitch": 0.06553149103157807,
-          "rotation": 0,
-          "target": "38-indoor-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "40-ksrce-road",
-      "name": "KSRCE Road",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 0.9928004492632674,
-        "pitch": -0.030664277744630652,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.9678384111061984,
-          "pitch": 0.0655589894142814,
-          "rotation": 0,
-          "target": "52-way-to-d-block"
-        },
-        {
-          "yaw": -2.0770844706698224,
-          "pitch": 0.10739499306720113,
-          "rotation": 0,
-          "target": "6-b-blockk"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "41-ksrce-road-1",
-      "name": "KSRCE Road-1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -0.0002047954525732365,
-        "pitch": -0.14489653443939332,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.01830325965017998,
-          "pitch": -0.016103906070563667,
-          "rotation": 0,
-          "target": "53-way-to-ksrce"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "42-library-1-floor",
-      "name": "Library 1-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -0.10278404368118821,
-        "pitch": 0.030664277744619994,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.987982908262275,
-          "pitch": 0.0056391152827206525,
-          "rotation": 1.5707963267948966,
-          "target": "43-library-g-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "43-library-g-floor",
-      "name": "Library G-Floor",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.6740962173288434,
-        "pitch": 0.07666196491875965,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.554904213325819,
-          "pitch": 0.053461660600437,
-          "rotation": 0,
-          "target": "9-c-block-entrance"
-        },
-        {
-          "yaw": -1.7156869822711407,
-          "pitch": -0.09832925605543075,
-          "rotation": 5.497787143782138,
-          "target": "42-library-1-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "44-physics-lab",
-      "name": "Physics Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.291088133913199,
-        "pitch": 0.41907846250987646,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.8447191975733794,
-          "pitch": 0.0750105989873866,
-          "rotation": 5.497787143782138,
-          "target": "23-f-block-1-foor-corridor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "45-r2s-lab",
-      "name": "R2S Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 3.122774979889635,
-        "pitch": 0.4081761352149975,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.0951652418695073,
-          "pitch": -0.08039035511933079,
-          "rotation": 11.780972450961727,
-          "target": "46-r2s-lab-1"
-        },
-        {
-          "yaw": -0.4747132742009601,
-          "pitch": -0.11775613222864045,
+          "yaw": 3.0356571697855372,
+          "pitch": 0.07086408915077769,
           "rotation": 4.71238898038469,
-          "target": "23-f-block-1-foor-corridor"
+          "target": "16-d-block-g-floor"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "46-r2s-lab-1",
-      "name": "R2S Lab-1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 2.606880512184163,
-        "pitch": 0.48624603502743824,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.2217661387554024,
-          "pitch": -0.008593968198329804,
-          "rotation": 0.7853981633974483,
-          "target": "45-r2s-lab"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "47-view-point",
-      "name": "View point",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.4237153886062508,
-        "pitch": -0.05901402084069218,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.527935151465627,
-          "pitch": -0.015526358265475437,
-          "rotation": 0,
-          "target": "17-energy-park"
-        },
-        {
-          "yaw": -2.9877827900592067,
-          "pitch": 0.03179081156692121,
-          "rotation": 0,
-          "target": "51-way-to-canteen"
-        },
-        {
-          "yaw": 1.8302357373549718,
-          "pitch": 0.046878100999951045,
-          "rotation": 0,
-          "target": "31-f-block-entrance"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "48-virtusa-lab",
-      "name": "Virtusa Lab",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -0.2775186846511595,
-        "pitch": 0.04088570365949806,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.1877964726176149,
-          "pitch": 0.26830954811842567,
-          "rotation": 0,
-          "target": "49-virtusa-lab-1"
-        },
-        {
-          "yaw": 1.3825361662308975,
-          "pitch": 0.06129923730388853,
-          "rotation": 4.71238898038469,
-          "target": "7-c-block-3-floor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "49-virtusa-lab-1",
-      "name": "Virtusa Lab-1",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": -3.1344524293691833,
-        "pitch": 0.46851118190013175,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.3776007876098912,
-          "pitch": 0.09666299007719559,
-          "rotation": 0,
-          "target": "48-virtusa-lab"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "50-way-to-b-block",
-      "name": "Way To B-Block",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1520,
-      "initialViewParameters": {
-        "yaw": 1.4681989252675391,
-        "pitch": -0.12778083574036003,
-        "fov": 1.530658530752525
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.6378748381457324,
-          "pitch": 0.05168235705989055,
-          "rotation": 0,
-          "target": "6-b-blockk"
-        },
-        {
-          "yaw": -1.4733413865827902,
-          "pitch": 0.06899291891038217,
-          "rotation": 0,
-          "target": "2-a-block-entrance-1"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "51-way-to-canteen",
+      "id": "18-way-to-canteen",
       "name": "Way To Canteen",
       "levels": [
         {
@@ -2248,35 +862,35 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -1.3571611643149701,
-        "pitch": -0.06643926844669323,
+        "yaw": -1.285760784193398,
+        "pitch": -0.14993860512838353,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -1.3378427520208405,
-          "pitch": -0.004957895741144469,
-          "rotation": 0,
-          "target": "47-view-point"
-        },
-        {
-          "yaw": -2.980894485524539,
-          "pitch": 0.05929449796590802,
-          "rotation": 0,
-          "target": "52-way-to-d-block"
-        },
-        {
-          "yaw": 2.2288107528431826,
-          "pitch": 0.056045833147589263,
+          "yaw": 2.426911596958419,
+          "pitch": 0.10526777777259078,
           "rotation": 5.497787143782138,
-          "target": "38-indoor-entrance"
+          "target": "19-indoor-entrance"
+        },
+        {
+          "yaw": -1.3294934284415927,
+          "pitch": 0.09512349479233784,
+          "rotation": 0,
+          "target": "22-view-point"
+        },
+        {
+          "yaw": -3.0360630538914872,
+          "pitch": 0.06598319807843822,
+          "rotation": 0,
+          "target": "14-d-block-road"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "52-way-to-d-block",
-      "name": "Way To D-Block",
+      "id": "19-indoor-entrance",
+      "name": "Indoor Entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -2298,35 +912,41 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 1.3383071117146805,
-        "pitch": -0.0843267637977192,
+        "yaw": -0.20499318939044642,
+        "pitch": -0.12265711097850485,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -0.15286264323845344,
-          "pitch": 0.0348238891394228,
+          "yaw": 0.5186318070043008,
+          "pitch": 0.03194208953069655,
           "rotation": 0,
-          "target": "15-d-block-entrance"
+          "target": "21-gym"
         },
         {
-          "yaw": 1.3490497984251277,
-          "pitch": 0.025674088016753416,
+          "yaw": -1.0185189655236293,
+          "pitch": -0.027040089179934057,
           "rotation": 0,
-          "target": "51-way-to-canteen"
+          "target": "20-indoor-court"
         },
         {
-          "yaw": -1.7670733502644413,
-          "pitch": 0.0904612396349549,
+          "yaw": 1.9437525191034304,
+          "pitch": 0.00887329069425391,
           "rotation": 0,
-          "target": "40-ksrce-road"
+          "target": "3-ksrce-ground"
+        },
+        {
+          "yaw": 2.8983090980360764,
+          "pitch": 0.044936461481610124,
+          "rotation": 1.5707963267948966,
+          "target": "18-way-to-canteen"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "53-way-to-ksrce",
-      "name": "Way To KSRCE",
+      "id": "20-indoor-court",
+      "name": "Indoor court",
       "levels": [
         {
           "tileSize": 256,
@@ -2348,35 +968,23 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": -0.18353586717048032,
-        "pitch": 0.00805454205745093,
+        "yaw": 0.25016423886408923,
+        "pitch": 0.21464994421237904,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 0.16158422935181882,
-          "pitch": 0.012904846843959206,
+          "yaw": -1.0818881417878323,
+          "pitch": 0.08330534571504877,
           "rotation": 0,
-          "target": "2-a-block-entrance-1"
-        },
-        {
-          "yaw": -2.9909120038002044,
-          "pitch": 0.054508102772818035,
-          "rotation": 0,
-          "target": "41-ksrce-road-1"
-        },
-        {
-          "yaw": 1.1814501632635697,
-          "pitch": 0.0012065942996084544,
-          "rotation": 0,
-          "target": "39-ksrce-ground"
+          "target": "19-indoor-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "54-english-lab",
-      "name": "English lab",
+      "id": "21-gym",
+      "name": "Gym",
       "levels": [
         {
           "tileSize": 256,
@@ -2398,22 +1006,826 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "yaw": 1.2117435053201469,
-        "pitch": -0.008495124134114462,
+        "yaw": -2.112585640119214,
+        "pitch": 0.30416933061908225,
         "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": -2.2262413896643256,
-          "pitch": 0.1458305865678522,
+          "yaw": -2.7593658900428153,
+          "pitch": 0.0714303615165317,
           "rotation": 0,
-          "target": "3-a-block"
+          "target": "19-indoor-entrance"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "55-faculty-cabin-4",
+      "id": "22-view-point",
+      "name": "View point",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.471521469574502,
+        "pitch": -0.0653176725884741,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.8251514391080814,
+          "pitch": 0.0820571409348716,
+          "rotation": 0,
+          "target": "23-f-block-entrance"
+        },
+        {
+          "yaw": -1.6094365628060032,
+          "pitch": 0.09077289091964857,
+          "rotation": 0,
+          "target": "46-energy-park"
+        },
+        {
+          "yaw": -2.8853693214458502,
+          "pitch": 0.08987002109315512,
+          "rotation": 5.497787143782138,
+          "target": "18-way-to-canteen"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "23-f-block-entrance",
+      "name": "F-Block Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.7669168086242246,
+        "pitch": -0.17631959703159872,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.874830809520283,
+          "pitch": 0.10998811900320504,
+          "rotation": 0,
+          "target": "24-f-block-g-floor"
+        },
+        {
+          "yaw": -0.32994600951484543,
+          "pitch": 0.118469222066933,
+          "rotation": 0,
+          "target": "22-view-point"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "24-f-block-g-floor",
+      "name": "F-BLock G-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.588150390739056,
+        "pitch": -0.04855177309565484,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.3307706547004763,
+          "pitch": 0.006042005156501773,
+          "rotation": 0.7853981633974483,
+          "target": "25-f-block-1-floor"
+        },
+        {
+          "yaw": -0.4783929433618894,
+          "pitch": 0.15965192361520053,
+          "rotation": 0.7853981633974483,
+          "target": "23-f-block-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "25-f-block-1-floor",
+      "name": "F-Block 1-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -2.5011184174348404,
+        "pitch": 0.0854120113815835,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.4642869155075644,
+          "pitch": 0.10272807132115247,
+          "rotation": 0,
+          "target": "30-chemistry-laboratory"
+        },
+        {
+          "yaw": 2.0276714859073923,
+          "pitch": -0.06444170798511095,
+          "rotation": 1.5707963267948966,
+          "target": "26-f-block-1-foor-corridor"
+        },
+        {
+          "yaw": 0.355222685329764,
+          "pitch": -0.11303493801756126,
+          "rotation": 0.7853981633974483,
+          "target": "31-f-block-2-floor"
+        },
+        {
+          "yaw": 0.5415194725131212,
+          "pitch": 0.13844808598428315,
+          "rotation": 1.5707963267948966,
+          "target": "24-f-block-g-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "26-f-block-1-foor-corridor",
+      "name": "F-Block 1-Foor Corridor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.201324044434812,
+        "pitch": -0.0894374767551529,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.6603677385756042,
+          "pitch": 0.025542034691964588,
+          "rotation": 5.497787143782138,
+          "target": "27-r2s-laboratory"
+        },
+        {
+          "yaw": -1.4854186610518187,
+          "pitch": 0.31330695275265086,
+          "rotation": 0.7853981633974483,
+          "target": "29-physics-laboratory"
+        },
+        {
+          "yaw": -2.282008588987683,
+          "pitch": 0.12079496535674394,
+          "rotation": 4.71238898038469,
+          "target": "25-f-block-1-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "27-r2s-laboratory",
+      "name": "R2S Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.3135570863357966,
+        "pitch": 0.08454895325226452,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0897599370547137,
+          "pitch": -0.08722769616661807,
+          "rotation": 0,
+          "target": "28-r2s-laboratory-"
+        },
+        {
+          "yaw": -0.16922020957775175,
+          "pitch": -0.12262059111308332,
+          "rotation": 4.71238898038469,
+          "target": "26-f-block-1-foor-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "28-r2s-laboratory-",
+      "name": "R2S Laboratory-",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.6360015016708367,
+        "pitch": 0.39169964309503236,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.2682353456929008,
+          "pitch": -0.0005772347707697634,
+          "rotation": 0,
+          "target": "27-r2s-laboratory"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "29-physics-laboratory",
+      "name": "Physics Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.2337073899810562,
+        "pitch": 0.37618180492201425,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.8534800538099585,
+          "pitch": 0.07467628165366769,
+          "rotation": 4.71238898038469,
+          "target": "26-f-block-1-foor-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "30-chemistry-laboratory",
+      "name": "Chemistry laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.09308742741069764,
+        "pitch": 0.44414758584310654,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.775701477445568,
+          "pitch": 0.029601123424427556,
+          "rotation": 4.71238898038469,
+          "target": "25-f-block-1-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "31-f-block-2-floor",
+      "name": "F-Block 2-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.5335470370684448,
+        "pitch": 0.012776782393601138,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.6088349817767105,
+          "pitch": 0.14866938360028215,
+          "rotation": 0.7853981633974483,
+          "target": "32-f-block-2-floor-corridor-"
+        },
+        {
+          "yaw": 0.4799513754245375,
+          "pitch": 0.002879787550696733,
+          "rotation": 0.7853981633974483,
+          "target": "36-f-block-3-floor-"
+        },
+        {
+          "yaw": 1.4797765693095153,
+          "pitch": 0.3065216539239657,
+          "rotation": 6.283185307179586,
+          "target": "25-f-block-1-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "32-f-block-2-floor-corridor-",
+      "name": "F-Block 2-Floor Corridor-",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.5983487103306828,
+        "pitch": -0.06456935711855039,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.006498734256212,
+          "pitch": 0.43127448333859597,
+          "rotation": 5.497787143782138,
+          "target": "35-faculty-cabin-2"
+        },
+        {
+          "yaw": 1.6142501373214948,
+          "pitch": 0.0975648500718087,
+          "rotation": 0,
+          "target": "33-f-block-2-floor-corridor"
+        },
+        {
+          "yaw": -1.5205869551668112,
+          "pitch": 0.1529214091530644,
+          "rotation": 5.497787143782138,
+          "target": "31-f-block-2-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "33-f-block-2-floor-corridor",
+      "name": "F-BLock 2-Floor Corridor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.1480146053768845,
+        "pitch": -0.09425786298884375,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.7633920314214304,
+          "pitch": 0.43564755783057585,
+          "rotation": 0,
+          "target": "34-faculty-cabin-1"
+        },
+        {
+          "yaw": 1.1403942318689815,
+          "pitch": 0.1080275738550931,
+          "rotation": 0,
+          "target": "32-f-block-2-floor-corridor-"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "34-faculty-cabin-1",
+      "name": "Faculty Cabin-1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.0592166004045716,
+        "pitch": -0.02981846500947327,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.1676010684627656,
+          "pitch": 0.4388256688503134,
+          "rotation": 1.5707963267948966,
+          "target": "33-f-block-2-floor-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "35-faculty-cabin-2",
+      "name": "Faculty Cabin-2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.027437966393168978,
+        "pitch": -0.0767486975511229,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -3.1018342444869784,
+          "pitch": 0.3964105104741744,
+          "rotation": 0.7853981633974483,
+          "target": "32-f-block-2-floor-corridor-"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "36-f-block-3-floor-",
+      "name": "F-Block 3-Floor-",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.03446620118158,
+        "pitch": 0.07989243381679323,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.8404729010936993,
+          "pitch": 0.15806724543023343,
+          "rotation": 0.7853981633974483,
+          "target": "37-f-block-3-floor-corridor-"
+        },
+        {
+          "yaw": -0.06128428736725233,
+          "pitch": 0.19602080928258836,
+          "rotation": 0.7853981633974483,
+          "target": "31-f-block-2-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "37-f-block-3-floor-corridor-",
+      "name": "F-Block 3-Floor Corridor-",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -3.0168678990820705,
+        "pitch": -0.04331690192951676,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.5212354495809466,
+          "pitch": 0.3968620551900326,
+          "rotation": 5.497787143782138,
+          "target": "39-faculty-cabin-3"
+        },
+        {
+          "yaw": -3.0423304240342652,
+          "pitch": 0.14985200804210663,
+          "rotation": 0,
+          "target": "38-f-block-3-floor-corridor"
+        },
+        {
+          "yaw": -1.1675326969469957,
+          "pitch": 0.28985284454266846,
+          "rotation": 0.7853981633974483,
+          "target": "36-f-block-3-floor-"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "38-f-block-3-floor-corridor",
+      "name": "F-Block 3-Floor Corridor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 3.0813112462390997,
+        "pitch": -0.10988032858489483,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.348291876563488,
+          "pitch": 0.39543498207539685,
+          "rotation": 5.497787143782138,
+          "target": "40-faculty-cabin-4"
+        },
+        {
+          "yaw": -3.1241162478499405,
+          "pitch": 0.1801002136184806,
+          "rotation": 0,
+          "target": "41--cse-hod-cabin-entrance"
+        },
+        {
+          "yaw": 0.000496780353850923,
+          "pitch": 0.10668763711490392,
+          "rotation": 5.497787143782138,
+          "target": "37-f-block-3-floor-corridor-"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "39-faculty-cabin-3",
+      "name": "Faculty Cabin-3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.17647217992387354,
+        "pitch": -0.007666069436154999,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.0605262648712497,
+          "pitch": 0.38035207404651494,
+          "rotation": 4.71238898038469,
+          "target": "37-f-block-3-floor-corridor-"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "40-faculty-cabin-4",
       "name": "Faculty Cabin-4",
       "levels": [
         {
@@ -2436,16 +1848,601 @@ var APP_DATA = {
       ],
       "faceSize": 1520,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.19198621771937496,
+        "pitch": -0.025553564787188066,
+        "fov": 1.530658530752525
       },
       "linkHotspots": [
         {
-          "yaw": 2.8533267298960547,
-          "pitch": 0.35285784623938987,
+          "yaw": 2.9923406570814617,
+          "pitch": 0.37013357396272184,
           "rotation": 4.71238898038469,
-          "target": "27-f-block-3-floor-corridor"
+          "target": "38-f-block-3-floor-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "41--cse-hod-cabin-entrance",
+      "name": " CSE HOD CABIN ENTRANCE",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.12383864166404912,
+        "pitch": -0.14027094562953302,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.18665425996789864,
+          "pitch": 0.38264459885665936,
+          "rotation": 0,
+          "target": "42--cse-hod-cabin-hall"
+        },
+        {
+          "yaw": 3.075957957413083,
+          "pitch": 0.1782456194739268,
+          "rotation": 6.283185307179586,
+          "target": "45--cse-classroom"
+        },
+        {
+          "yaw": -1.690126993840213,
+          "pitch": 0.17678145351675312,
+          "rotation": 0,
+          "target": "38-f-block-3-floor-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "42--cse-hod-cabin-hall",
+      "name": " CSE HOD CABIN HALL",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.8980677991215202,
+        "pitch": -0.10200929831886185,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.029981092769416406,
+          "pitch": 0.16782750739754704,
+          "rotation": 0.7853981633974483,
+          "target": "43--cse-hod-cabin"
+        },
+        {
+          "yaw": -3.130039544528623,
+          "pitch": 0.5609256530447126,
+          "rotation": 0,
+          "target": "41--cse-hod-cabin-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "43--cse-hod-cabin",
+      "name": " CSE HOD CABIN",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 0.8741032422919162,
+        "pitch": -0.015121509418589696,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.0643171080617853,
+          "pitch": 0.3399100111084472,
+          "rotation": 6.283185307179586,
+          "target": "44-conference-hall"
+        },
+        {
+          "yaw": -1.6750983754141195,
+          "pitch": 0.350805478792207,
+          "rotation": 5.497787143782138,
+          "target": "42--cse-hod-cabin-hall"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 2.061076798972419,
+          "pitch": -0.09788191504030586,
+          "title": "DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING",
+          "text": "Department of CSE was started in the year of 2001 initially with B.E programme. M.E pragramme was started in the year of 2007. The department is recognized to offer the research programme for Ph.D.<div><br></div><div>Dr.A.Rajiv Kannan Ph.D.,</div><div>Professor &amp; Head</div>"
+        }
+      ]
+    },
+    {
+      "id": "44-conference-hall",
+      "name": "Conference Hall",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.5532214206537667,
+        "pitch": 0.2687817814554343,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.3672561586002576,
+          "pitch": 0.08795576807836447,
+          "rotation": 0.7853981633974483,
+          "target": "41--cse-hod-cabin-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "45--cse-classroom",
+      "name": " CSE ClassRoom",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.6289402402947601,
+        "pitch": 0.26564219530503763,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.9176989509610483,
+          "pitch": 0.37396769399343555,
+          "rotation": 0.7853981633974483,
+          "target": "41--cse-hod-cabin-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "46-energy-park",
+      "name": "Energy Park",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.3629510790085888,
+        "pitch": -0.37318581439959075,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0311434042478744,
+          "pitch": 0.143714395803201,
+          "rotation": 0,
+          "target": "16-d-block-g-floor"
+        },
+        {
+          "yaw": 1.1193893459451303,
+          "pitch": 0.09597916246320004,
+          "rotation": 0.7853981633974483,
+          "target": "47-c-block-entrance"
+        },
+        {
+          "yaw": -3.0751802337282275,
+          "pitch": 0.10643574759334484,
+          "rotation": 5.497787143782138,
+          "target": "22-view-point"
+        },
+        {
+          "yaw": -0.5087228946390034,
+          "pitch": 0.08485260315583076,
+          "rotation": 0,
+          "target": "11-b-block-g-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "47-c-block-entrance",
+      "name": "C-Block Entrance",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.2896043917513644,
+        "pitch": -0.03321963422334129,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.3557258119892843,
+          "pitch": 0.2458933588371366,
+          "rotation": 0.7853981633974483,
+          "target": "48-library-g-floor"
+        },
+        {
+          "yaw": -1.3631357629673353,
+          "pitch": 0.02757291925362715,
+          "rotation": 0,
+          "target": "50-c-block-3-floor"
+        },
+        {
+          "yaw": 1.8380847011228623,
+          "pitch": 0.0921231836944969,
+          "rotation": 0,
+          "target": "46-energy-park"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "48-library-g-floor",
+      "name": "Library G-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 1.5577704882081687,
+        "pitch": 0.09965890267002919,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.731216282957286,
+          "pitch": -0.0977241181593218,
+          "rotation": 5.497787143782138,
+          "target": "49-library-1-floor"
+        },
+        {
+          "yaw": 2.5506586776988343,
+          "pitch": 0.14892938221246865,
+          "rotation": 0,
+          "target": "47-c-block-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "49-library-1-floor",
+      "name": "Library 1-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.13380857598622597,
+        "pitch": -0.005110712957442587,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.9667158400314353,
+          "pitch": 0.02066373600630378,
+          "rotation": 7.853981633974483,
+          "target": "48-library-g-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "50-c-block-3-floor",
+      "name": "C-Block 3-Floor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.049136805921039,
+        "pitch": 0.015332138872309997,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.13490297246705651,
+          "pitch": 0.2540194417392545,
+          "rotation": 0.7853981633974483,
+          "target": "52-cecs-c2-laboratory"
+        },
+        {
+          "yaw": -1.98013335104846,
+          "pitch": 0.2704413053650967,
+          "rotation": 5.497787143782138,
+          "target": "51-cecs-c1-laboratory"
+        },
+        {
+          "yaw": 2.7814008020225156,
+          "pitch": 0.3080455406485214,
+          "rotation": 0,
+          "target": "47-c-block-entrance"
+        },
+        {
+          "yaw": 1.4508447543746552,
+          "pitch": 0.2874006341313944,
+          "rotation": 0,
+          "target": "47-c-block-entrance"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "51-cecs-c1-laboratory",
+      "name": "CECS C1 Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -1.8550608749692685,
+        "pitch": 0.28108921265905806,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.9739124995393507,
+          "pitch": 0.3776775712934395,
+          "rotation": 0.7853981633974483,
+          "target": "50-c-block-3-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "52-cecs-c2-laboratory",
+      "name": "CECS C2 Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": -0.37815467126543467,
+        "pitch": 0.26320171730804276,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.19914495679028654,
+          "pitch": 0.2908106460365243,
+          "rotation": 0,
+          "target": "53-cecs-c2-laboratory-"
+        },
+        {
+          "yaw": 1.2965867192036136,
+          "pitch": 0.42825807767355073,
+          "rotation": 5.497787143782138,
+          "target": "50-c-block-3-floor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "53-cecs-c2-laboratory-",
+      "name": "CECS C2 Laboratory-",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1520,
+      "initialViewParameters": {
+        "yaw": 2.683504373839364,
+        "pitch": 0.34683997993131044,
+        "fov": 1.530658530752525
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.447716186826062,
+          "pitch": 0.11644479704376387,
+          "rotation": 0,
+          "target": "52-cecs-c2-laboratory"
         }
       ],
       "infoHotspots": []

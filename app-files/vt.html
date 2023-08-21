@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Tour</title>
+<link rel="icon" href="https://i.ibb.co/23gR3dt/ksrcelog.png">
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="/app-files/vt.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-ksrce">
+        <li class="text">KSRCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-a-block-entrance">
+        <li class="text">A-Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-a-block-entrance-1">
+        <li class="text">A-Block Entrance-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-a-block">
+        <li class="text">A-Block</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-b-block-entrance">
+        <li class="text">B-Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-b-block">
+        <li class="text">B-Block</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-b-blockk">
+        <li class="text">B-Blockk</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-c-block-3-floor">
+        <li class="text">C-Block 3-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-c-block-cse-lab">
+        <li class="text">C-Block CSE-Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-c-block-entrance">
+        <li class="text">C-Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-chemistry-lab">
+        <li class="text">Chemistry lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-civil-lab">
+        <li class="text">Civil Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-classroom">
+        <li class="text">ClassRoom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-conference-hall">
+        <li class="text">Conference Hall</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-d-block-entrance-2">
+        <li class="text">D-Block Entrance (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-d-block-entrance">
+        <li class="text">D-Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-d-block-lab">
+        <li class="text">D-Block Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-energy-park">
+        <li class="text">Energy Park</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-a-block-lab">
+        <li class="text">A-Block Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-faculty-cabin-1">
+        <li class="text">Faculty Cabin-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-faculty-cabin-2">
+        <li class="text">Faculty Cabin-2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-faculty-cabin-3">
+        <li class="text">Faculty Cabin-3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-f-block-1-floor">
+        <li class="text">F-Block 1-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-f-block-1-foor-corridor">
+        <li class="text">F-Block 1-Foor Corridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-f-block-2-floor-corridor">
+        <li class="text">F-BLock 2-Floor Corridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-f-block-2-floor-corridor-">
+        <li class="text">F-Block 2-Floor Corridor-</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-f-block-2-floor">
+        <li class="text">F-Block 2-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-f-block-3-floor-corridor">
+        <li class="text">F-Block 3-Floor Corridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-f-block-3-floor-corridor-1">
+        <li class="text">F-Block 3-Floor Corridor-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-f-block-3-floor">
+        <li class="text">F-Block 3-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-f-block-3-floor-">
+        <li class="text">F-Block 3-Floor-</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-f-block-entrance">
+        <li class="text">F-Block Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-f-block-g-floor">
+        <li class="text">F-BLock G-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-gym">
+        <li class="text">Gym</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-hod-cabin-entrance">
+        <li class="text">HOD CABIN ENTRANCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-hod-cabin-hall">
+        <li class="text">HOD CABIN HALL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-hod-cabin">
+        <li class="text">HOD CABIN</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-indoor-court">
+        <li class="text">Indoor court</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-indoor-entrance">
+        <li class="text">Indoor Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-ksrce-ground">
+        <li class="text">KSRCE GROUND</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-ksrce-road">
+        <li class="text">KSRCE Road</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-ksrce-road-1">
+        <li class="text">KSRCE Road-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-library-1-floor">
+        <li class="text">Library 1-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-library-g-floor">
+        <li class="text">Library G-Floor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-physics-lab">
+        <li class="text">Physics Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-r2s-lab">
+        <li class="text">R2S Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-r2s-lab-1">
+        <li class="text">R2S Lab-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-view-point">
+        <li class="text">View point</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-virtusa-lab">
+        <li class="text">Virtusa Lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-virtusa-lab-1">
+        <li class="text">Virtusa Lab-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-way-to-b-block">
+        <li class="text">Way To B-Block</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-way-to-canteen">
+        <li class="text">Way To Canteen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-way-to-d-block">
+        <li class="text">Way To D-Block</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-way-to-ksrce">
+        <li class="text">Way To KSRCE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-english-lab">
+        <li class="text">English lab</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-faculty-cabin-4">
+        <li class="text">Faculty Cabin-4</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="/app-files/data.js"></script>
+<script src="/app-files/vt.js"></script>
+
+</body>
+</html>

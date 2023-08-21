@@ -1,0 +1,382 @@
+*{
+   /* overflow-x: hidden; */
+   margin: 0%;
+padding: 0;    
+}
+#ks{
+   background-color:#347B98;
+   width: 100%;
+   background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 50%); 
+   position:sticky;   
+}
+.sharp{
+   border-radius:0;
+}
+#KSR_logo{
+   width: 50%;
+}
+#Ablock{
+   width: 100%;
+}.fixed
+{
+   position: fixed;
+   top:230px;
+   right: 0;
+   width:50px;
+   height:200px;
+   z-index:999;
+}
+.button 
+{
+display: block;
+border: 0;
+line-height: 3;
+margin-bottom: 0.3em;
+outline: none;
+text-decoration: none;
+color: #fff;
+width: 250px;
+font-size: 16px;
+border-radius: 20px 0 0 20px;
+font-weight: 800;
+}
+.buttonDiv 
+{
+padding: 0 21px;
+border-radius: 30px 0 0 30px;
+}
+.buttonDiv:hover
+{
+   background: white;
+   transition: margin 1000ms;
+   margin-left: -140px;
+}
+
+.bg-b-purple
+{
+   background: linear-gradient(45deg, #a52dd8, #e29bf1);
+}
+.bg-b-purple:hover
+{
+   background:linear-gradient(45deg, #f4daff, #b143dd);
+}
+body{
+background-color: rgb(255, 255, 255);}
+
+  
+    #text{
+     color: #ededed;
+     font-size: 21px;
+     font-variant:small-caps;
+     position:relative;
+     top: 52%;
+     left: 50%;
+     -webkit-transform: translate(-50%,-50%);
+     -ms-transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
+     text-align:center;
+    }
+    #mynav{
+       width: 100%;
+      
+    }
+    #read{
+     border: none;
+     color: #ffffff;
+     border-radius: 20%;
+     background-color: #ffc6c6;
+     margin-top: 7%;
+    }
+    #read:hover{
+    background-color: rgb(255, 255, 152);
+    }
+    #bg-hod{
+     height: 360px;
+     width: 100%;
+     background: linear-gradient(to right,#2D6980 0%,#2D6980 50%,#67AFCB 50%,#67AFCB 100%);
+    }
+    .navbar .navbar-nav .nav-link{
+       color: #ededed;
+    }
+    .navbar .navbar-nav .nav-link:hover{
+       background-color: #fe9916;
+       color: #030303;
+    }
+    #toggle{
+       height: 20px;
+       width: 20px;
+       margin-left: -10px;
+    }
+    #toggle1{
+       margin-top: -13px;
+       margin-left: -8px;
+       width: 15px;
+       height: 15px;
+    }
+    #c1{
+       background-color: #347B98;
+       border: none;
+    }
+    #c2{
+       background-color: #67AFCB;
+       border: none;
+    }
+    
+@media(max-width:600px)  {
+  
+  #KSR_logo{
+   width: 100%;
+
+  }
+  #ks{
+   width: 100%;
+   background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 60%);    
+   
+  }
+ 
+#card h3,h6{
+   font-size: 20px;
+}
+}
+#faculty_card{
+   margin-top: 20px;
+ 
+}
+#fa_card{
+  background-repeat: no-repeat;
+  background-size: 400px 180px;
+  background-image: url(https://i.ibb.co/nBnzQVY/bggg2.jpg );
+}
+
+#faculty_card img{
+       width: 200px;
+
+}
+#name{
+  font-size: large;
+  font-weight: 600;
+}
+#ft{
+  font-family: 'Fugaz One';font-size: 22px;
+text-align: center;
+font-size: 64px;
+color: #030303;
+margin: 0 0 70px;
+
+}#hov li a{
+  color: white;
+}
+#hov li a:hover{
+  color: orange;
+}
+.container{
+
+display:flex;
+justify-content:end;
+align-items:center;
+}
+
+.container ul{
+display:flex;
+
+}
+
+.container ul li{
+overflow:hidden;
+list-style:none;
+margin:5px;
+height:50px;
+width:50px;
+background-color:#744655;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:4px;
+cursor:pointer;
+position:relative;
+z-index:1;
+transition:all 0.5s;
+
+}
+
+.container ul li span{
+display:none;
+font-size:14px;
+margin-left:4px;
+transition:all 4s;
+transition-delay:1s;
+}
+
+.container ul li:hover span{
+display:block;
+}
+
+.container ul li:hover{
+width:90px;
+height:50px;
+display:flex;
+justify-content:left;
+padding-left:10px;
+}
+#fac-img{
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+#tourv{
+  display: none;
+}
+@media(max-width:600px)  {
+  #tourv{
+    display:block;
+  }
+}
+.port{
+  color:white;
+  font-size: larger;
+}
+:root {
+  --hue: 1278;
+  --bg: hsl(var(--hue),90%,90%);
+  --fg: hsl(var(--hue),90%,10%);
+  --primary: hsl(var(--hue),90%,50%);
+  --trans-dur: 0.1s;
+}
+
+.bike {
+  margin:auto;
+  width: 16em;
+  height: auto;
+}
+.bike__body,
+.bike__front,
+.bike__handlebars,
+.bike__pedals,
+.bike__pedals-spin,
+.bike__seat,
+.bike__spokes,
+.bike__spokes-spin,
+.bike__tire {
+  animation: bikeBody 3s ease-in-out infinite;
+  stroke: var(--primary);
+  transition: stroke var(--trans-dur);
+}
+.bike__front {
+  animation-name: bikeFront;
+}
+.bike__handlebars {
+  animation-name: bikeHandlebars;
+}
+.bike__pedals {
+  animation-name: bikePedals;
+}
+.bike__pedals-spin {
+  animation-name: bikePedalsSpin;
+}
+.bike__seat {
+  animation-name: bikeSeat;
+}
+.bike__spokes,
+.bike__tire {
+  stroke: currentColor;
+}
+.bike__spokes {
+  animation-name: bikeSpokes;
+}
+.bike__spokes-spin {
+  animation-name: bikeSpokesSpin;
+}
+.bike__tire {
+  animation-name: bikeTire;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+     --bg: hsl(var(--hue),90%,10%);
+     --fg: hsl(var(--hue),90%,90%);
+  }
+}
+
+/* Animations */
+@keyframes bikeBody {
+  from { stroke-dashoffset: 79; }
+  33%,
+  67% { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -79; }
+}
+@keyframes bikeFront {
+  from { stroke-dashoffset: 19; }
+  33%,
+  67% { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -19; }
+}
+@keyframes bikeHandlebars {
+  from { stroke-dashoffset: 10; }
+  33%,
+  67% { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -10; }
+}
+@keyframes bikePedals {
+  from {
+     animation-timing-function: ease-in;
+     stroke-dashoffset: -25.133;
+  }
+  33%,
+  67% {
+     animation-timing-function: ease-out;
+     stroke-dashoffset: -21.991;
+  }
+  to {
+     stroke-dashoffset: -25.133;
+  }
+}
+@keyframes bikePedalsSpin {
+  from { transform: rotate(0.1875turn); }
+  to { transform: rotate(3.1875turn); }
+}
+@keyframes bikeSeat {
+  from { stroke-dashoffset: 5; }
+  33%,
+  67% { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -5; }
+}
+@keyframes bikeSpokes {
+  from {
+     animation-timing-function: ease-in;
+     stroke-dashoffset: -31.416;
+  }
+  33%,
+  67% {
+     animation-timing-function: ease-out;
+     stroke-dashoffset: -23.562;
+  }
+  to {
+     stroke-dashoffset: -31.416;
+  }
+}
+@keyframes bikeSpokesSpin {
+  from { transform: rotate(0); }
+  to { transform: rotate(3turn); }
+}
+@keyframes bikeTire {
+  from {
+     animation-timing-function: ease-in;
+     stroke-dashoffset: 56.549;
+     transform: rotate(0);
+  }
+  33% {
+     stroke-dashoffset: 0;
+     transform: rotate(0.33turn);
+  }
+  67% {
+     animation-timing-function: ease-out;
+     stroke-dashoffset: 0;
+     transform: rotate(0.67turn);
+  }
+  to {
+     stroke-dashoffset: -56.549;
+     transform: rotate(1turn);
+  }
+}

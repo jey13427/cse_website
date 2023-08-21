@@ -1,0 +1,13 @@
+@charset "utf-8";
+.cls{
+    margin-top: 250px;
+    background-color: antiquewhite;
+}
+#tourv{
+    display: none;
+  }
+  @media(max-width:600px)  {
+    #tourv{
+      display:block;
+    }
+  }

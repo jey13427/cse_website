@@ -1,0 +1,114 @@
+*{
+    /* overflow-x: hidden; */
+    margin: 0%;
+    padding: 0;    
+}
+#ks{
+    background-color:#347B98;
+    width: 100%;
+    background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 50%); 
+    position:sticky;   
+}
+.sharp{
+    border-radius:0;
+}
+#KSR_logo{
+    width: 50%;
+}
+#Ablock{
+    width: 100%;
+}
+
+   
+     #text{
+      color: #ededed;
+      font-size: 21px;
+      font-variant:small-caps;
+      position:relative;
+      top: 52%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      text-align:center;
+     }
+     #mynav{
+        width: 100%;
+       
+     }
+     #ln{
+     }
+     #read{
+      border: none;
+      color: #ffffff;
+      border-radius: 20%;
+      background-color: #ffc6c6;
+      margin-top: 7%;
+     }
+     #read:hover{
+     background-color: rgb(255, 255, 152);
+     }
+     #bg-hod{
+      height: 360px;
+      width: 100%;
+      background: linear-gradient(to right,#2D6980 0%,#2D6980 50%,#67AFCB 50%,#67AFCB 100%);
+     }
+     .navbar .navbar-nav .nav-link{
+        color: #ededed;
+     }
+     .navbar .navbar-nav .nav-link:hover{
+        background-color: #fe9916;
+        color: #030303;
+     }
+     #toggle{
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+     }
+     #toggle1{
+        margin-top: -13px;
+        margin-left: -8px;
+        width: 15px;
+        height: 15px;
+     }
+     #c1{
+        background-color: #347B98;
+        border: none;
+     }
+     #c2{
+        background-color: #67AFCB;
+        border: none;
+     }
+.shadow{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.13)!important;
+}
+.main-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background-image: url(Images/GOPR1041.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.img-circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    border: 3px solid #a51616;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.123);
+    z-index: 1;
+}
+#tourv{
+    display: none;
+  }
+  @media(max-width:600px)  {
+    #tourv{
+      display:block;
+    }
+  }

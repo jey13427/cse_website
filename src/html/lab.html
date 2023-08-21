@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Infrastructure</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+<link rel="icon" href="https://i.ibb.co/23gR3dt/ksrcelog.png">
+<link rel="stylesheet" href="/src/css/loading.css">
+<link rel="stylesheet" href="/src/css/style.css">
+</head>
+<style>
+  
+.fixed
+{
+    position: fixed;
+    top:230px;
+    right: 0;
+    width:50px;
+    height:200px;
+    z-index:999;
+}
+.button 
+{
+display: block;
+border: 0;
+line-height: 3;
+margin-bottom: 0.3em;
+outline: none;
+text-decoration: none;
+color: #fff;
+width: 250px;
+font-size: 16px;
+border-radius: 20px 0 0 20px;
+font-weight: 800;
+}
+.buttonDiv 
+{
+padding: 0 21px;
+border-radius: 30px 0 0 30px;
+}
+.buttonDiv:hover
+{
+    background: white;
+    transition: margin 1000ms;
+    margin-left: -140px;
+}
+#tourv{
+  display: none;
+}
+@media(max-width:600px)  {
+  #tourv{
+    display:block;
+  }
+}
+.bg-b-purple
+{
+    background: linear-gradient(45deg, #a52dd8, #e29bf1);
+}
+.bg-b-purple:hover
+{
+    background:linear-gradient(45deg, #f4daff, #b143dd);
+}
+</style>
+<body id="loadingafter" style="overflow: hidden;">
+  <div id="loading" class="loadingbody" style="display: block;">
+    <div class="book">
+      <div class="inner">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sticky-top">
+    <div class="container-fluid p-1 " id="ks">
+        <img src="https://i.ibb.co/dpvsJVC/KSR-logo-wt.png" alt="KSR" class="img-fluid h-25 " id="KSR_logo">
+
+      
+   </nav></div>     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-dark" id="mqnav">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand link-light" href="#">KSRCE</a>  -->
+      <button class="navbar-toggler bg-light " id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="toggle1"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav bg-dark">
+            
+            <li class="nav-item">
+              <a class="nav-link active link-light" aria-current="page" href="/src/html/index.html"><i class="fa fa-home" id="home"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="/src/html/faculty.html">Faculty Profile</a></li>
+                <li><a class="dropdown-item" href="/src/html/technicians.html">Technicians</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/src/html/placement .html" id="plac">Placement</a>
+            </li>
+          
+           
+            <a class="nav-link " href="/src/html/peo po_pso.html">PEO,PO,PSO</a>
+            </li> <li class="nav-item">
+              <a class="nav-link " href="/src/html/vismis.html">Vision & Mission</a>
+            </li> <li class="nav-item">
+              <a class="nav-link " href="/src/html/curriculam.html">Curriculam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/src/html/lab.html">Lab Infrastructure</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Students
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="/src/html/students1.html">Students Database</a></li>
+                <li><a class="dropdown-item" href="/src/html/students_achivements.html">Students Achievements</a></li>
+                <li>
+                  <a class="dropdown-item" href="/src/html/table.html">Roll Of Honor</a>
+                </li>
+              </ul>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link " href="/src/html/research.html">Research</a>
+            </li>
+            <li class="nav-item" id="tourv">
+              <a class="nav-link" href="/app-files/vt.html">VirtualTour</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>  
+ <div class="fixed">
+      <a href="" class="button ">
+    
+       <a href="app-files/vt.html" class="button">
+          <div class="buttonDiv bg-b-purple">
+            <i style="font-size:20px" class="fa">&#xf083;</i>
+           &nbsp; Virtual Tour
+          </div>
+      </a>
+  </div>    
+  <!-- Gallery -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.ibb.co/YNrX6rC/A-Block-lab-1-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>A-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ibb.co/k9F18bm/civil-lab.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>B-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ibb.co/p3kKHrz/Virtusa-2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>C-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ibb.co/GChmjqQ/C-Block-lab-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>C-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div> <div class="carousel-item">
+        <img src="https://i.ibb.co/8DwyN8X/R2-S-Lab-3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>F-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div> <div class="carousel-item">
+        <img src="https://i.ibb.co/Bgb1KLW/D-Block-Lab-3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>D-Block Laboratory</h5>
+          <p>Department of Computer Science and Engineering</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+          <table class="table table-primary">
+            <thead>
+          <tr>
+            <th scope="col">S.NO</th>
+            <th scope="col">NAME OF THE LAB</th>
+            <th scope="col">NO. OF SYSTEMS</th>
+            <th scope="col">VENUE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>CECS A1</td>
+            <td>75</td>
+            <td>A - BLOCK</td>
+        </tr>  
+         <tr>
+          <th scope="row">2</th>
+          <td>CECS A2</td>
+          <td>70</td>
+          <td>A - BLOCK</td>
+        </tr>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>CECS B</td>
+            <td>94</td>
+            <td>B - BLOCK</td>
+          <tr>
+            <th scope="row">4</th>
+            <td>CECS C1</td>
+            <td>100</td>
+            <td>C - BLOCK</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>CECS C2</td>
+            <td>60</td>
+            <td>C - BLOCK</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>R2S LAB</td>
+            <td>49</td>
+            <td>F - BLOCK</td>
+          </tr>
+        
+        </tbody>
+      </table> <br> <br>
+      <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
+        <div class="row">
+          <div class="col-12 col-md">
+       
+            <div class="container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3463608691513!2d77.82480971466879!3d11.356050691929795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96403619f2d5b%3A0x6eeb2e0b7fe9be97!2sKSRCE%20CSE%20Department!5e1!3m2!1sen!2sin!4v1678517364991!5m2!1sen!2sin" width="500" height="350" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div></div>
+          <div class="col-6 col-md" >
+            <h5 class="link-danger">Campus</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="/src/html/index.html" style="text-decoration: none;">About Management</a></li>
+              <li><a href="/src/html/NCC.html" style="text-decoration: none;">NCC</a></li>
+              <li><a href="/src/html/NSS.html" style="text-decoration: none;">NSS</a></li>
+              <li><a href="/src/html/placement cell.html" style="text-decoration: none;">Placement</a></li>
+              <li><a href="https://www.google.co.in/maps/place/KSRCE+CSE+Department/@11.3560507,77.8248097,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba96403619f2d5b:0x6eeb2e0b7fe9be97!8m2!3d11.3560507!4d77.8269984!16s%2Fg%2F11fx_51v10" style="text-decoration: none;">Location Map</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="link-danger">Accreditation / Approval</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text"  href="/src/html/annauniversity1.html" style="text-decoration: none;">AICTE</a></li>
+              <li><a class="text"  href="/src/html/annauniversity1.html" style="text-decoration: none;">Anna University</a></li>
+              <li><a class="text"  href="https://www.ksrce.ac.in/admin/file_manager/source/About%20Us/Approval%20Copy/NAAC%20Certificate2.pdf" style="text-decoration: none;">NAAC</a></li>
+              <li><a class="text"  href="/src/html/NBA.html" style="text-decoration: none;">NBA</a></li>
+              <li><a class="text"  href="/src/html/NIRF.html" style="text-decoration: none;">NIRF</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="link-danger">Useful Links</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text"  href="https://nptel.ac.in/aboutus" style="text-decoration: none;">NPTEL Online Courses</a></li>
+              <li><a class="text"  href="/src/html/scholarship.html" style="text-decoration: none;">Scholarship</a></li>
+              <li><a class="text"  href="/src/html/anti ragging.html" style="text-decoration: none;">Anti Ragging</a></li>
+              <li><a class="text"  href="https://ksrce.edugrievance.com/" style="text-decoration: none;">Grievances Cell</a></li>
+              <li><a class="text"  href="https://www.ksrceresults.com/" style="text-decoration: none;">ESE Results</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="link-danger">Contact Us</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text" href="#"  style="text-decoration: none;"> <i class="fa fa-home">&nbsp;&nbsp;The Principal,<br>
+                K.S.R. College of Engineering,<br>
+                K.S.R. Kalvi Nagar,<br>
+                Tiruchengode - 637 215,<br>
+                Namakkal (D.t)
+                 </i></a></li>
+              <li><a class="text" href="tel://04288274213/"  style="text-decoration: none;"><i class="fa fa-mobile-phone"></i>+914288 - 274213</a></li>
+              <li><a class="text" href="tel://04288274213/"  style="text-decoration: none;"><i class="fa fa-fax"></i> 04288 - 274757</a></li>
+              <li><a class="text" href="mailto:principal@ksrce.ac.in"  style="text-decoration: none;"><i class="fa fa-envelope"></i> principal@ksrce.ac.in</a></li>
+              <li><a class="text" href="mailto:hodcse@ksrce.ac.in"  style="text-decoration: none;"><i class="fa fa-envelope"></i> hodcse@ksrce.ac.in</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <ul>
+              <a href="https://www.facebook.com/KSRCEofficial/" style="text-decoration: none;"><li><i class='fa fa-facebook'></i><span>Facebook</span></li></a>
+             <a href="https://twitter.com/ksrceofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  style="text-decoration: none;"><li><i class='fa fa-twitter'></i><span>Twitter</span></li></a>
+             <a href="https://in.linkedin.com/company/ksrce"  style="text-decoration: none;"><li><i class='fa fa-linkedin'></i><span>Linkedin</span></li></a> 
+             <a href="https://www.instagram.com/ksrceofficial/?hl=en" style="text-decoration: none;"><li><i class='fa fa-instagram'></i><span>Instagram</span></li></a>      
+          </ul>
+      </div>   
+        </div>
+        <small class="d-block mb-3 text-center link-light">&copy;Copyright 2023-2040 <br> <p class="port">Site developed by<a href="/src/html/portfolio.html">Click Here</a></p></small> 
+      </footer>
+      <script src="/src/js/loading.js"></script>
+</body>
+</html>

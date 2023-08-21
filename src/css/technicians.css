@@ -1,0 +1,174 @@
+*{
+    /* overflow-x: hidden; */
+    margin: 0%;
+padding: 0;    
+}
+#ks{
+    background-color:#347B98;
+    width: 100%;
+    background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 50%); 
+    position:sticky;   
+}
+.sharp{
+    border-radius:0;
+}
+#KSR_logo{
+    width: 50%;
+}
+#Ablock{
+    width: 100%;
+}
+
+   
+     #text{
+      color: #ededed;
+      font-size: 21px;
+      font-variant:small-caps;
+      position:relative;
+      top: 52%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      text-align:center;
+     }
+     #mynav{
+        width: 100%;
+       
+     }
+     #ln{
+     }
+     #read{
+      border: none;
+      color: #ffffff;
+      border-radius: 20%;
+      background-color: #ffc6c6;
+      margin-top: 7%;
+     }
+     #read:hover{
+     background-color: rgb(255, 255, 152);
+     }
+     #bg-hod{
+      height: 360px;
+      width: 100%;
+      background: linear-gradient(to right,#2D6980 0%,#2D6980 50%,#67AFCB 50%,#67AFCB 100%);
+     }
+     .navbar .navbar-nav .nav-link{
+        color: #ededed;
+     }
+     .navbar .navbar-nav .nav-link:hover{
+        background-color: #fe9916;
+        color: #030303;
+     }
+     #toggle{
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+     }
+     #toggle1{
+        margin-top: -13px;
+        margin-left: -8px;
+        width: 15px;
+        height: 15px;
+     }
+     #c1{
+        background-color: #347B98;
+        border: none;
+     }
+     #c2{
+        background-color: #67AFCB;
+        border: none;
+     }
+     #tt1{
+        font-weight: 700;
+       }
+       #hov li a{
+         color: white;
+       }
+     #hov li a:hover{
+         color: orange;
+     }
+     .container{
+     
+       display:flex;
+       justify-content:end;
+       align-items:center;
+     }
+     
+     .container ul{
+       display:flex;
+       
+     }
+     
+     .container ul li{
+       overflow:hidden;
+       list-style:none;
+       margin:5px;
+       height:50px;
+       width:50px;
+       background-color:#744655;
+       color:#fff;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       border-radius:4px;
+       cursor:pointer;
+       position:relative;
+       z-index:1;
+       transition:all 0.5s;
+       
+     }
+     
+     .container ul li span{
+       display:none;
+       font-size:14px;
+       margin-left:4px;
+       transition:all 4s;
+       transition-delay:1s;
+     }
+     
+     .container ul li:hover span{
+       display:block;
+     }
+     
+     .container ul li:hover{
+       width:90px;
+       height:50px;
+       display:flex;
+       justify-content:left;
+       padding-left:10px;
+     }
+     
+     
+ @media(max-width:640px)  {
+   
+   #KSR_logo{
+    width: 100%;
+
+   }
+   #ks{
+    width: 100%;
+    background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 60%);    
+    
+   }
+   #tt{
+    font-size: 10px;
+    font-weight: 700;
+   }
+  
+
+
+    
+}
+#tourv{
+  display: none;
+}
+@media(max-width:600px)  {
+  #tourv{
+    display:block;
+  }
+}
+.port{
+  color:white;
+  font-size: larger;
+}

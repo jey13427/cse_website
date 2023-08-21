@@ -1,0 +1,111 @@
+*{
+    /* overflow-x: hidden; */
+    margin: 0;
+    border: none;
+    padding: 0%;
+}
+#ks{
+    background-color:#347B98;
+    width: 100%;
+    background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 50%);    
+}
+.sharp{
+    border-radius:0;
+}
+#KSR_logo{
+    width: 50%;
+}
+
+#KSR_logo1{
+    margin-left: 20px;
+}
+.fixed
+{
+    position: fixed;
+    top:230px;
+    right: 0;
+    width:50px;
+    height:200px;
+    z-index:999;
+}
+.button 
+{
+display: block;
+border: 0;
+line-height: 3;
+margin-bottom: 0.3em;
+outline: none;
+text-decoration: none;
+color: #fff;
+width: 250px;
+font-size: 16px;
+border-radius: 20px 0 0 20px;
+font-weight: 800;
+}
+.buttonDiv 
+{
+padding: 0 21px;
+border-radius: 30px 0 0 30px;
+}
+.buttonDiv:hover
+{
+    background: white;
+    transition: margin 1000ms;
+    margin-left: -140px;
+}
+
+.bg-b-purple
+{
+    background: linear-gradient(45deg, #a52dd8, #e29bf1);
+}
+.bg-b-purple:hover
+{
+    background:linear-gradient(45deg, #f4daff, #b143dd);
+}
+
+
+     .navbar .navbar-nav .nav-link{
+        color: #ededed;
+     }
+     .navbar .navbar-nav .nav-link:hover{
+        background-color: #fe9916;
+        color: #030303;
+     }
+     #toggle{
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+     }
+     #toggle1{
+        margin-top: -13px;
+        margin-left: -8px;
+        width: 15px;
+        height: 15px;
+     }
+    
+ @media(max-width:600px)  {
+    
+   
+   #KSR_logo{
+    width: 100%;
+
+   }
+   #ks{
+    background: linear-gradient(110deg, #2D6980, 50%,#9DCADD 60%);    
+    width: 100%;
+   }
+
+
+  }
+  #tourv{
+    display: none;
+  }
+  @media(max-width:600px)  {
+    #tourv{
+      display:block;
+    }
+  }
+  .port{
+    color:white;
+    font-size: larger;
+}

@@ -50,7 +50,7 @@
   <div class="sticky-top">
     <div class="container-fluid p-1 " id="ks">
         <img src="https://i.ibb.co/dpvsJVC/KSR-logo-wt.png" alt="KSR" class="img-fluid h-25 " id="KSR_logo">    
-       
+        <!-- <p class=" container bg-danger link-dark display-6">TNEA Counselling Code :2613</p> -->
       
       </div>     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -112,9 +112,9 @@
             
       <div class="switch-field "class="ml-auto">
         <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-        <label for="radio-one"><a class="nav-link " href="/src/html/index.html">UG</a></label>
+        <label for="radio-one"><a class="nav-link p-1 " href="/src/html/index.html">UG</a></label>
         <input type="radio" id="radio-two" name="switch-one" value="no" />
-        <label for="radio-two"> <a class="nav-link " href="/src/html/indexME.html">PG</a></label>
+        <label for="radio-two"> <a class="nav-link p-1" href="/src/html/indexME.html">PG</a></label>
         </div>
     
           </div>
@@ -122,7 +122,7 @@
       </div>
       </nav>  
         <img src="https://i.ibb.co/LhqS5ts/UNDERG-CSE.png" alt="" class="img-fluid" id="Ablock">  
-        <section class="container-fluid"><br><br>
+              <section class="container-fluid"><br><br>
           <div class="row">
            </div>
         </section> 
@@ -264,7 +264,7 @@
 
 <!--contact box  -->
 <h1 class="link-dark">Contact Us</h1>
-<form class="cf">
+<form class="cf"  method="post" name="conTact">
   <div class="half left cf">
     <input type="text" id="input-name" placeholder="Name">
     <input type="email" id="input-email" placeholder="Email address">
@@ -272,8 +272,10 @@
   </div>
   <div class="half right cf">
     <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-  </div>
+
   <input type="submit" value="Submit" id="input-submit">
+</div>
+
 </form>
 
   <br>
@@ -331,7 +333,7 @@
               </ul>
             </div>
           </div>
-          <!-- contact form -->
+     <!-- contact form -->
       
           <div class="container">
             <ul>
@@ -346,7 +348,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
   <script src="/src/js/index.js"></script>
-  <script>    
+  <script>
   originalUrl="https://script.google.com/macros/s/AKfycbxON58iI55pz3fMLN3GnJXdSOc8aqt5wjnvMsrla_EQzzRJmLefcecyapM0TNUa3XRJjA/exec"
     fetch(originalUrl).then(response => {
               if (response.status === 302) {
@@ -408,7 +410,17 @@
             .catch(error => {
               console.error("Error:", error);
             });
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxMrbHqOyTXhpk5gHxRAKc1fsbeJ8wvv2QbYBCZFqvQQR-yXxiitS1_hBxZd49wLP07Dw/exec'
+            const form = document.forms['contact']
+   
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+
+            .catch(error => console.error('Error!', error.message))
+    });
   </script>
-  <script src="/src/js/loading.js"></script>
+    <script src="/src/js/loading.js"></script>
 </body>
 </html>

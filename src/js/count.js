@@ -46,3 +46,4 @@ counters.forEach((counter) => {
       window.removeEventListener('scroll', arguments.callee);
     }
   });
+  

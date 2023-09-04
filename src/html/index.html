@@ -264,19 +264,33 @@
 
 <!--contact box  -->
 <h1 class="link-dark">Contact Us</h1>
-<form class="cf"  method="post" name="conTact">
+<form class="cf"  method="post" name="contact">
   <div class="half left cf">
-    <input type="text" id="input-name" placeholder="Name">
-    <input type="email" id="input-email" placeholder="Email address">
-    <input type="text" id="input-subject" placeholder="Number">
+     <input type="text"  name="Name" id="input-name" placeholder="Name">
+    <!-- <input type="text" name="Name" > -->
+    <input type="email" name="Email Id" id="input-email" placeholder="Email address">
+    <input type="text" name="Mobile Number"  type="number" id="input-subject" placeholder="Number">
   </div>
   <div class="half right cf">
-    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+    <textarea name="Message" type="text" id="input-message" placeholder="Message"></textarea>
 
   <input type="submit" value="Submit" id="input-submit">
 </div>
 
 </form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyC2q5nBqa09-4DVMRXpkfV2Bmha_bGAhv0smS0HJMDyN86bSlyGvcSJZ7d02kSfrO7hQ/exec'
+  const form = document.forms['contact']
+ 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thank you! your form is submitted successfully." ))
+    
+    .catch(error => console.error('Error!', error.message))
+  })
+  </script>
 
   <br>
   <br>
@@ -410,16 +424,7 @@
             .catch(error => {
               console.error("Error:", error);
             });
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxMrbHqOyTXhpk5gHxRAKc1fsbeJ8wvv2QbYBCZFqvQQR-yXxiitS1_hBxZd49wLP07Dw/exec'
-            const form = document.forms['contact']
-   
-            form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank you! your form is submitted successfully." ))
-
-            .catch(error => console.error('Error!', error.message))
-    });
+           
   </script>
     <script src="/src/js/loading.js"></script>
 </body>

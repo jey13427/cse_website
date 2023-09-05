@@ -103,12 +103,18 @@
               <li class="nav-item">
                 <a class="nav-link " href="/src/html/research.html">Research</a>              
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a>
+              </li>
              
         
               <li class="nav-item" id="tourv">
                 <a class="nav-link" class="virtualtour" href="/app-files/vt.html">VirtualTour</a>
               </li>
+             
+
             </ul>
+         
             
       <div class="switch-field "class="ml-auto">
         <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
@@ -184,16 +190,7 @@
           </div>
           <!-- End of card -->     
         </div>
-            <!-- SIDE BUTTON -->
-            <div class="fixed">
-              <a href="" class="button ">        
-               <a href="/app-files/vt.html" class="button">
-                  <div class="buttonDiv bg-b-purple">
-                    <i style="font-size:20px" class="fa">&#xf083;</i>
-                   &nbsp; Virtual Tour
-                  </div>
-              </a>
-         </div>            
+                    
          <br>
         <br> <br> <br> <div class="blog-slider">
           <div class="blog-slider__wrp swiper-wrapper">
@@ -263,24 +260,70 @@
   </div><br>
 
 <!--contact box  -->
-<h1 class="link-dark">Contact Us</h1>
-<form class="cf"  method="post" name="contact">
-  <div class="half left cf">
-     <input type="text" id="input-name" placeholder="Name" required>
-     <input type="hidden" name="Name">
-    <!-- <input type="text" name="Name" > -->
-    <input type="email" type="hidden" name="Email Id" id="input-email" placeholder="Email address" required>
-    <input type="text" type="hidden" name="Mobile Number"  type="number" id="input-subject" placeholder="Number" required>
-  </div>
-  <div class="half right cf">
-    <textarea name="Message" type="hidden" type="text" id="input-message" placeholder="Message" required></textarea>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" >Contact us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <!-- input fields -->
+       <form name="contact" method="post" id="form">
+         <div class="mb-3"> 
+        
+          <label for="exampleInputPassword1" class="form-label">Name</label> 
+          <input type="text" name="Name" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" name="Email Id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+          <input type="text" name="Mobile Number" class="form-control" id="exampleInputPassword1" required>
+        </div>
+       
+        <div class="mb-3">
+          <label for="exampleInputPassword1"  class="form-label" >Message</label>
+      
 
-  <input type="submit" value="Submit" id="input-submit">
+        <div class="input-group">
+          <textarea class="form-control" name="Message" aria-label="With textarea" required></textarea>
+        </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbyC2q5nBqa09-4DVMRXpkfV2Bmha_bGAhv0smS0HJMDyN86bSlyGvcSJZ7d02kSfrO7hQ/exec'
+          const form = document.forms['contact']
+         
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .catch(error => console.error('Error!', error.message))
+            document.getElementById("form").reset();
+
+          })
+          </script>
+      
+      
+   
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+ 
+    </div>
+   
+  </div>
+ 
 </div>
 
-</form>
 
-<script>
+<!-- <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyC2q5nBqa09-4DVMRXpkfV2Bmha_bGAhv0smS0HJMDyN86bSlyGvcSJZ7d02kSfrO7hQ/exec'
   const form = document.forms['contact']
  
@@ -291,10 +334,9 @@
     
     .catch(error => console.error('Error!', error.message))
   })
-  </script>
+  </script> -->
 
-  <br>
-  <br>
+
         <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
           <div class="row">
             <div class="col-12 col-md">
@@ -308,6 +350,7 @@
                 <li><a href="/src/html/index.html" style="text-decoration: none;">About Management</a></li>
                 <li><a href="/src/html/NCC.html"   style="text-decoration: none;">NCC</a></li>
                 <li><a href="/src/html/NSS.html"   style="text-decoration: none;">NSS</a></li>
+                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none;">Contact us</a></li>
                 <li><a href="/src/html/placement cell.html" style="text-decoration: none;">Placement</a></li>
                 <li><a href="https://www.google.co.in/maps/place/KSRCE+CSE+Department/@11.3560507,77.8248097,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba96403619f2d5b:0x6eeb2e0b7fe9be97!8m2!3d11.3560507!4d77.8269984!16s%2Fg%2F11fx_51v10" style="text-decoration: none;">Location Map</a></li>              
               </ul>
@@ -358,7 +401,7 @@
                <a href="https://www.instagram.com/ksrceofficial/?hl=en" style="text-decoration: none;"><li><i class='fa fa-instagram'></i><span>Instagram</span></li></a>      
             </ul>
         </div>   
-        <small class="d-block mb-3 text-center link-light">&copy;Copyright 2023-2040 <br> <p class="port">Site developed by<a href="/src/html/">Click Here</a></p></small> 
+        <small class="d-block mb-3 text-center link-light">&copy;Copyright 2023-2040 <br> <p class="port">Site developed by<a href="/src/html/"></a></p></small> 
         </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>

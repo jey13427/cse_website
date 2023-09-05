@@ -144,7 +144,7 @@ background-color: rgb(255, 255, 255);}
 }
 #fa_card{
   background-repeat: no-repeat;
-  background-size: 400px 180px;
+  background-size: 600px 165px;
   background-image: url(https://i.ibb.co/nBnzQVY/bggg2.jpg );
 }
 
@@ -379,4 +379,16 @@ padding-left:10px;
      stroke-dashoffset: -56.549;
      transform: rotate(1turn);
   }
+}
+@media only screen and (max-width: 1200px) and (min-width: 767px){
+  #faculty_card img{
+    width: 120px;
+}
+#name{
+  font-size: 13px;
+}
+#fa_card{
+  background-size: 250px 100px;
+}
+
 }

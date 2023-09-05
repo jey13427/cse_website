@@ -273,23 +273,24 @@
          <div class="mb-3"> 
         
           <label for="exampleInputPassword1" class="form-label">Name</label> 
-          <input type="text" name="Name" class="form-control" id="exampleInputPassword1" required>
+
+          <input type="text" name="Name" autocomplete="off" class="form-control" id="exampleInputPassword1" required>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" name="Email Id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <input type="email" name="Email Id" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-          <input type="text" name="Mobile Number" class="form-control" id="exampleInputPassword1"pattern="[6789][0-9]{9}" title="Please enter valid phone number">
+          <input type="text"  name="Mobile Number" autocomplete="off" class="form-control" id="exampleInputPassword1"pattern="[6789][0-9]{9}" title="Please enter valid phone number">
         </div>
        
         <div class="mb-3">
-          <label for="exampleInputPassword1"  class="form-label" >Message</label>
+          <label for="exampleInputPassword1"   class="form-label" >Message</label>
       
 
         <div class="input-group">
-          <textarea class="form-control" name="Message" aria-label="With textarea" required></textarea>
+          <textarea class="form-control" name="Message" autocomplete="off" aria-label="With textarea" required></textarea>
         </div>
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>

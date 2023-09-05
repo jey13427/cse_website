@@ -144,27 +144,109 @@
                     </div>
                   </div>
                   </nav> 
-        <h1>Founder's Message:</h1>
-        <img src="https://i.ibb.co/8rDh3fL/founder.jpg" alt="" width="15%" height="5%" id="founder">
-        <div id="name"><h2>Lion. Dr. K. S. Rangasamy, MJF.</h2> </div>         
-           <div class="imgdown"><h3> Founder of KSREI</h3></div>
-       
-        <div class="a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lion. Dr. K. S. Rangasamy, MJF., the Founder Chairman of the college is a well-known philanthropist in this part of the country. He hails from a village in Tiruchengode, Namakkal District, Tamil Nadu. In a mission to take education to every nook and corner of his region, which was then an educationally backward area, he started the Aarthi Educational and Charitable Trust. Following this, he started various educational institutions in Tiruchengode and KSR College of Engineering is one among them. His amazing contribution to the field of education has earned him the title ‘KalviRathna’. He has been conferred with an Honorary Doctorate by the West University of USA, to acknowledge his exemplary contribution to education. He is also involved in the Textile industry and trade.</div>
-         <h4>
-            From the Founder's Desk
-         </h4>
-        <div class="b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K.S.R. College of Engineering is an institution committed to perfection and excellence in the field of Technical Education. It provides an opportunity to mold young men and women academically, professionally and socially, thus creating Engineers and Technologists who make a better world. I am sure that you, the aspiring engineers and technologists will find yourselves exposed to a conducive atmosphere for learning and evolving into experts who are confident to face the challenges of the future with confidence. The Infrastructure, the Faculty, and the Environment will set your mood to plan your work and work your plan for a rewarding career.
-            I hope that your stay here will be a pleasant and memorable one. I assure you that K.S.R. College of Engineering will transform you into talented professionals as well as valuable citizens of the nation. I wish you a prosperous future through your being admitted into our prestigious institution.</div>
-            <div class="c"><p>
-            With hearty wishes,</p></div>
-                <h4>Lion. Dr. K. S. Rangasamy, MJF.,</h4>
-                <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
-                    <div class="row">
-                      <div class="col-12 col-md">
-                   
-                        <div class="container">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3463608691513!2d77.82480971466879!3d11.356050691929795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96403619f2d5b%3A0x6eeb2e0b7fe9be97!2sKSRCE%20CSE%20Department!5e1!3m2!1sen!2sin!4v1678517364991!5m2!1sen!2sin" width="500" height="350" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div></div>
+                  <div class="container-gallery">
+                    <div class="popup popup-1">
+                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design1.jpg" />
+                    </div>
+                    <div class="popup popup-2">
+                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design2.jpg" />
+                    </div>
+                    <div class="popup popup-3">
+                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design3.jpg" />
+                    </div>
+                    <div class="popup popup-4">
+                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design4.jpg" />
+                    </div>
+                    <div class="popup popup-5">
+                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design5.jpg" />
+                    </div>
+                </div>
+                
+                <style>
+                    .container-gallery
+                    {
+                        width: 100%;
+                        -webkit-transform-style: preserve-3d;
+                        transform-style: preserve-3d;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        -webkit-perspective: 1000;
+                        perspective: 1000;
+                        position: relative;
+                    }
+                
+                    .popup
+                    {
+                        width: 250px;
+                        margin: 0 -25px;
+                        position: relative;
+                        box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.5);
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 5px;
+                        -webkit-transition: .2s;
+                        transition: .2s;
+                        cursor: pointer;
+                    }
+                
+                        .popup:hover
+                        {
+                            -webkit-transition: .2s;
+                            transition: .2s;
+                            -webkit-transform: translateZ(5px) translateY(-20px) scale(1.05);
+                            transform: translateZ(5px) translateY(-20px) scale(1.05);
+                        }
+                
+                    .popup-1,
+                    .popup-4
+                    {
+                        -webkit-transform: translateZ(1px);
+                        transform: translateZ(1px);
+                    }
+                
+                    .popup-2,
+                    .popup-5
+                    {
+                        -webkit-transform: translateZ(2px) translateY(-5px);
+                        transform: translateZ(2px) translateY(-5px);
+                    }
+                
+                    .popup-3
+                    {
+                        -webkit-transform: translateZ(3px) translateY(-10px);
+                        transform: translateZ(3px) translateY(-10px);
+                    }
+                
+                    .popup-1:hover ~ .popup-2
+                    {
+                        -webkit-transform: translateZ(4px) translateY(-15px);
+                        transform: translateZ(4px) translateY(-15px);
+                        -webkit-transition: .2s;
+                        transition: .2s;
+                    }
+                
+                    .popup-4
+                    {
+                        -webkit-box-ordinal-group: 6;
+                        -ms-flex-order: 5;
+                        order: 5;
+                    }
+                
+                        .popup-4:hover ~ .popup-5
+                        {
+                            -webkit-transform: translateZ(3px) translateY(-15px);
+                            transform: translateZ(3px) translateY(-15px);
+                            -webkit-transition: .1s;
+                            transition: .1s;
+                        }
+                </style>
                       <div class="col-6 col-md" >
                         <h5 class="link-danger">Campus</h5>
                         <ul class="list-unstyled text-small">

@@ -240,21 +240,21 @@
       <div>
         <i><img class="cimg" src="https://i.ibb.co/ygkF6J3/student.png" alt="" width="35%" height="35%"></i>
      <br>
-        <span><span class="counter" data-target="500">100</span><span class="ppp"> &#43;</span></span>
+        <span><span class="counter" data-target="500">100</span><span class="ppp">&#43;</span></span>
       <!-- <div> <div class="counter" data-target="500">0</div> &#43;</div> -->
         <h3 class="name_counter">Students</h3>
       </div>
       <div>
         <i><img src="https://i.ibb.co/yF7R6Z8/teacher-1.png" alt="" width="35%" height="35%"></i>
         <br>
-        <span><span class="counter" data-target="30">0</span><span class="ppp"> &#43;</span></span>
+        <span><span class="counter" data-target="30">0</span><span class="ppp">&#43;</span></span>
         <!-- <div class="counter" data-target="30">0</div> -->
         <h3 class="name_counter">Faculty</h3>
       </div>
       <div>
        <i><img src="https://i.ibb.co/LNDZrbk/congratulation-1.png" alt="" width="35%" height="35%"></i>
         <br>
-       <span><span class="counter" data-target="2500">1000</span><span class="ppp"> &#43;</span></span>
+       <span><span class="counter" data-target="2500">1000</span><span class="ppp">&#43;</span></span>
        <!-- <div class="counter" data-target="2500">1000</div> -->
         <h3 class="name_counter">Alumini</h3>
       </div>
@@ -266,13 +266,14 @@
 <h1 class="link-dark">Contact Us</h1>
 <form class="cf"  method="post" name="contact">
   <div class="half left cf">
-     <input type="text"  name="Name" id="input-name" placeholder="Name">
+     <input type="text" id="input-name" placeholder="Name" required>
+     <input type="hidden" name="Name">
     <!-- <input type="text" name="Name" > -->
-    <input type="email" name="Email Id" id="input-email" placeholder="Email address">
-    <input type="text" name="Mobile Number"  type="number" id="input-subject" placeholder="Number">
+    <input type="email" type="hidden" name="Email Id" id="input-email" placeholder="Email address" required>
+    <input type="text" type="hidden" name="Mobile Number"  type="number" id="input-subject" placeholder="Number" required>
   </div>
   <div class="half right cf">
-    <textarea name="Message" type="text" id="input-message" placeholder="Message"></textarea>
+    <textarea name="Message" type="hidden" type="text" id="input-message" placeholder="Message" required></textarea>
 
   <input type="submit" value="Submit" id="input-submit">
 </div>

@@ -18,6 +18,167 @@
             body{
                 background-color: rgb(207, 204, 191);
             }
+            .clear-fix {
+  clear: both;
+}
+
+.masonry-container {
+  width: 80vw;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.panel {
+  position: relative;
+  display: inline-block;
+  width: calc((80vw - 60px)/3);
+  height: calc((80vw - 60px)/3);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-out;
+}
+
+.panel:hover {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.55);
+  transition: all 0.2s ease-out;
+}
+
+.panel:nth-child(11n+1) {
+  margin-left: 0;
+}
+
+.panel:nth-child(11n+4) {
+  margin-left: 0;
+  width: calc(((80vw - 20px)/3)*2);
+  height: calc((80vw - 60px)/3);
+}
+
+.panel:nth-child(11n+6) {
+  margin-left: 0;
+  float: left;
+  width: calc((80vw - 60px)/3);
+  height: calc(((80vw - 20px)/3)*2 - 8px);
+}
+
+.panel:nth-child(11n+6) > .panel-wrapper > .panel-img {
+  transform: translateX(-25%);
+}
+
+.panel:nth-child(11n+7) {
+  margin-left: 27px;
+  width: calc(((80vw - 20px)/3)*2);
+}
+
+.panel:nth-child(11n+8) {
+  margin-left: 27px;
+}
+
+.panel:nth-child(11n+9) {
+  float: none;
+}
+
+.panel:nth-child(11n+10) {
+  margin-left: 0;
+  width: calc((80vw - 30px)/2);
+}
+
+.panel:nth-child(11n+11) {
+  width: calc((80vw - 30px)/2);
+}
+
+
+.panel-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
+
+.panel-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.panel-overlay:hover {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.panel-text {
+  position: absolute;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  left: 25px;
+  bottom: 0;
+  z-index: 10;
+}
+
+.panel-title {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.panel-tags {
+  padding-top: 2px;
+}
+
+.tag-icon-img {
+  display: inline-block;
+  width: 10px;
+  height: auto;
+  transform: translateY(2px);
+}
+
+.tags-list {
+  font-size: 0.55em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.panel-gradient {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  bottom: 0;
+  opacity: 0.65;
+  z-index: 5;
+}
+
+.panel-vingette {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.5;
+}
+
+.panel-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+
+
             .a{
                 text-align: justify;
                 font-size: 120%;
@@ -144,109 +305,194 @@
                     </div>
                   </div>
                   </nav> 
-                  <div class="container-gallery">
-                    <div class="popup popup-1">
-                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design1.jpg" />
+                  CSSResult Skip Results Iframe
+                  EDIT ON
+                  <div class="masonry-container">
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Crashing Waves</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Landscapes, Waves, Beach</span>
+                            </div>
+                          </div>
+                        </div>
+                        <img class="panel-img" src="https://i.ibb.co/M5nRvXk/ksr01.jpg" alt=""/>
+                      </div>
                     </div>
-                    <div class="popup popup-2">
-                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design2.jpg" />
+                    <div class="panel">
+                    <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Blue Docks</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Docks, Sunset, Horizon</span>
+                            </div>
+                          </div>                        </div>
+
+                          <img class="panel-img" src="https://i.ibb.co/8N4v8gh/ksr02.webp " alt=""/>
+
+                      </div></div>
+                    <div class="panel">
+                        <div class="panel-wrapper">
+                          <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Pastel Canyons</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Canyon, Rock formations</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/canyon.jpg" alt=""/>
+                      </div>
                     </div>
-                    <div class="popup popup-3">
-                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design3.jpg" />
+                    
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Pink Mountain Sunset</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Landscapes, Sunset, Mountains</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/dawn-mountains.jpg" alt=""/>
+                      </div>
                     </div>
-                    <div class="popup popup-4">
-                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design4.jpg" />
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Autumn Pine</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Forest, Pines, Mountains</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/forest.jpg" alt=""/>
+                      </div>  
                     </div>
-                    <div class="popup popup-5">
-                        <img class="img-responsive" alt="Pop Up Gallety" src="http://www.prepbootstrap.com/Content/images/template/design/design5.jpg" />
+                    
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Purple Power Poles</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Urban, landscape, manmade</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/power-poles.jpg" alt=""/>
+                      </div>
                     </div>
-                </div>
-                
-                <style>
-                    .container-gallery
-                    {
-                        width: 100%;
-                        -webkit-transform-style: preserve-3d;
-                        transform-style: preserve-3d;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        align-items: center;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        justify-content: center;
-                        -webkit-perspective: 1000;
-                        perspective: 1000;
-                        position: relative;
-                    }
-                
-                    .popup
-                    {
-                        width: 250px;
-                        margin: 0 -25px;
-                        position: relative;
-                        box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.5);
-                        background-size: cover;
-                        background-position: center;
-                        border-radius: 5px;
-                        -webkit-transition: .2s;
-                        transition: .2s;
-                        cursor: pointer;
-                    }
-                
-                        .popup:hover
-                        {
-                            -webkit-transition: .2s;
-                            transition: .2s;
-                            -webkit-transform: translateZ(5px) translateY(-20px) scale(1.05);
-                            transform: translateZ(5px) translateY(-20px) scale(1.05);
-                        }
-                
-                    .popup-1,
-                    .popup-4
-                    {
-                        -webkit-transform: translateZ(1px);
-                        transform: translateZ(1px);
-                    }
-                
-                    .popup-2,
-                    .popup-5
-                    {
-                        -webkit-transform: translateZ(2px) translateY(-5px);
-                        transform: translateZ(2px) translateY(-5px);
-                    }
-                
-                    .popup-3
-                    {
-                        -webkit-transform: translateZ(3px) translateY(-10px);
-                        transform: translateZ(3px) translateY(-10px);
-                    }
-                
-                    .popup-1:hover ~ .popup-2
-                    {
-                        -webkit-transform: translateZ(4px) translateY(-15px);
-                        transform: translateZ(4px) translateY(-15px);
-                        -webkit-transition: .2s;
-                        transition: .2s;
-                    }
-                
-                    .popup-4
-                    {
-                        -webkit-box-ordinal-group: 6;
-                        -ms-flex-order: 5;
-                        order: 5;
-                    }
-                
-                        .popup-4:hover ~ .popup-5
-                        {
-                            -webkit-transform: translateZ(3px) translateY(-15px);
-                            transform: translateZ(3px) translateY(-15px);
-                            -webkit-transition: .1s;
-                            transition: .1s;
-                        }
-                </style>
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Purple Ridges</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Mountains, Sunrise, Landscapes</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/purple-mtn.jpg" alt=""/>
+                      </div>
+                    </div>
+                    
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Spinning Lights</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Carnival, Lights, Nightlife</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/rides.jpg" alt=""/>
+                      </div>  
+                    </div>
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Feather Bokeh</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Close-ups, Feather, Bokeh</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/feather.jpg" alt=""/>
+                      </div>
+                    </div>
+                    
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Irridescent Bench</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Landscapes, Still-Life, Countryside</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/bench-alt.jpg" alt=""/>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-wrapper">
+                        <div class="panel-overlay">
+                          <div class="panel-text">
+                            <div class="panel-title">Blazing Dandelions</div>
+                            <div class="panel-tags">
+                              <span class="tag-icon"><img class="tag-icon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg" alt=""/></span>
+                              <span class="tags-list">Dandelion, Bokeh, Flora</span>
+                            </div>
+                          </div>
+                          <img class="panel-gradient" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png" alt=""/>
+                          <img class="panel-vingette" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png" alt=""/>
+                        </div>
+                        <img class="panel-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/bokeh-dandelion.jpg" alt=""/>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
+                    <div class="row">
+                      <div class="col-12 col-md">
+                   
+                        <div class="container">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3463608691513!2d77.82480971466879!3d11.356050691929795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96403619f2d5b%3A0x6eeb2e0b7fe9be97!2sKSRCE%20CSE%20Department!5e1!3m2!1sen!2sin!4v1678517364991!5m2!1sen!2sin" width="500" height="350" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div></div>
                       <div class="col-6 col-md" >
                         <h5 class="link-danger">Campus</h5>
                         <ul class="list-unstyled text-small">

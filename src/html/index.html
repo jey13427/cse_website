@@ -51,7 +51,7 @@
     <div class="container-fluid p-1 " id="ks">
         <img src="https://i.ibb.co/dpvsJVC/KSR-logo-wt.png" alt="KSR" class="img-fluid h-25 " id="KSR_logo">    
         <!-- <p class=" container bg-danger link-dark display-6">TNEA Counselling Code :2613</p> -->
-      
+     
       </div>     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -106,12 +106,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a>
               </li>
-             
-        
-              <li class="nav-item" id="tourv">
-                <a class="nav-link" class="virtualtour" href="/app-files/vt.html">VirtualTour</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Feedback
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item " href="/src/html/studentfeedback.html">Student Feedback</a></li>
+                </ul>
               </li>
-             
+              
+        
 
             </ul>
          
@@ -169,7 +173,7 @@
               <div class="col-md-7 px-3">
                 <div class="card-block px-8">
                   <p class="card-text">
-                    <h4 style="color: red;">Department of Computer Science and Engineering</h4>
+                    <h4 style="color: red; font-variant:small-caps;" >Department of Computer Science and Engineering</h4>
                     Department of CSE was started in the year 2001 initially with B.E Programme. With the increasing demand in Computer Science and Engineering, M.E programme was started in the year 2007. The department is recognized to offer the research programme for Ph.D. The department aims at developing intellectually alert, scientifically progressive, globally competent and dynamic young IT professionals. The students are transformed into technically qualified & employable human resources for the development of society. The department is encouraging the faculty to carry out the consultancy services towards the present needs of the society.                  
                 </div>
               </div>
@@ -322,23 +326,12 @@
   </div>
  
 </div>
+  <div class="vtour">
+  <img class="img-fluid" src="https://i.ibb.co/X4QPjbb/a-block-vt.jpg" alt="" style="opacity: 0.3;">
 
+ </div>
 
-<!-- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyC2q5nBqa09-4DVMRXpkfV2Bmha_bGAhv0smS0HJMDyN86bSlyGvcSJZ7d02kSfrO7hQ/exec'
-  const form = document.forms['contact']
- 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Thank you! your form is submitted successfully." ))
-    
-    .catch(error => console.error('Error!', error.message))
-  })
-  </script> -->
-
-
-        <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
+<footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
           <div class="row">
             <div class="col-12 col-md">
          
@@ -359,7 +352,7 @@
             <div class="col-6 col-md">
               <h5 class="link-danger">Accreditation / Approval</h5>
               <ul class="list-unstyled text-small">
-                <li><a class="text"  href="/src/html/annauniversity1.html" style="text-decoration: none;">AICTE</a></li>
+                <li><a class="text"  href="https://www.aicte-india.org/" style="text-decoration: none;">AICTE</a></li>
                 <li><a class="text"  href="/src/html/annauniversity1.html" style="text-decoration: none;">Anna University</a></li>
                 <li><a class="text"  href="/src/html/404error.html" style="text-decoration: none;">NAAC</a></li>
                 <li><a class="text"  href="/src/html/NBA.html"  style="text-decoration: none;">NBA</a></li>

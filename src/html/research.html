@@ -12,11 +12,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+<link rel="stylesheet" href="/src/css/loading.css">
+
 
 
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
-<body >
+   
+<body id="loadingafter" style="overflow: hidden;">
+  <div id="loading" class="loadingbody" style="display: block;">
+    <div class="book">
+      <div class="inner">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
   <div class="sticky-top">
     <div class="container-fluid p-1 " id="ks">
         <img src="https://i.ibb.co/dpvsJVC/KSR-logo-wt.png" alt="KSR" class="img-fluid h-25 " id="KSR_logo">
@@ -267,5 +299,7 @@
                   console.error("Error:", error);
                 });
                 </script>
+                <script src="/src/js/loading.js"></script>
+
 </body>
 </html>

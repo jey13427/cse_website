@@ -1408,4 +1408,179 @@ section article.skills div:nth-child(5) span:nth-child(2) {
 .switch-field label:last-of-type {
 	border-radius: 0 4px 4px 0;
 }
+.loadingbody{
+  z-index: 100;
+}
+/* floating button */
+.flBtn {
+  position: fixed;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+.flBtn ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;  
+  position: absolute;
+  visibility: hidden;
+}
+.flBtn input {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
 
+.flBtn input:checked ~ ul {
+  visibility: visible;
+}
+.flBtn input:checked ~ ul .lilink {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .flBtn input:hover + .alink {
+  color: #ffffff;
+  background: #000000;
+} */
+.flBtn input:hover + .alink[tooltip]:before {
+  visibility: visible;
+  opacity: 1;
+}
+.flBtn .alink {
+  position: relative;
+  z-index: 2;
+  display: block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background: #ffbd3a;
+  color: #ffffff;
+  border-radius: 20px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+/* .flBtn .alink:hover {
+  color: #383838;
+  background: #4db6ac;
+} */
+.flBtn ul .lilink {
+  display: inline-block;
+  margin: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.flBtn [tooltip]:before {
+  position: absolute;
+  content: attr(tooltip);
+  visibility: hidden;
+  opacity: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.flBtn [tooltip]:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.flBtn-size-medium .alink{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+}
+.flBtn-size-medium ul .alink {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.flBtn-size-medium [tooltip]:before {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.flBtn-position-br {
+  bottom: 20px;
+  right: 20px;
+}
+.flBtn-position-br [tooltip][data-role]:before {
+  right: 100%;
+  bottom: 100%;
+}
+.flBtn-position-br .flBtn-first {
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 100%;
+}
+.flBtn-position-br .flBtn-first [tooltip]:before {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+}
+.flBtn-position-br .flBtn-second {
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+}
+.flBtn-position-br .flBtn-second [tooltip]:before {
+  right: 100%;
+  bottom: 100%;
+  margin-bottom: 5px;
+}
+/* countee */
+/* .website-counter {
+  background-color: #ff4957;
+  height: 50px;
+  width: 80px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* Styles for reset button */
+/* #reset {
+  margin-top: 20px;
+  background-color: #008cba;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  color: white;
+  border: 0;
+}.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */ 

@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-....." crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/loading.css">
+    <link rel="stylesheet" href="/src/js/index.js">
 </head>
 <body id="loadingafter" style="overflow: hidden;">
   <div id="loading" class="loadingbody" style="display: block;">
@@ -299,38 +302,59 @@
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-        <script>
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbyC2q5nBqa09-4DVMRXpkfV2Bmha_bGAhv0smS0HJMDyN86bSlyGvcSJZ7d02kSfrO7hQ/exec'
-          const form = document.forms['contact']
-         
-          form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank you! your form is submitted successfully." ))
-            .catch(error => console.error('Error!', error.message))
-            document.getElementById("form").reset();
-
-          })
-          </script>
-      
-      
-   
-      </div>
-
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
- 
     </div>
-   
   </div>
- 
 </div>
-  <div class="vtour">
-  <img class="img-fluid" src="https://i.ibb.co/X4QPjbb/a-block-vt.jpg" alt="" style="opacity: 0.3;">
-
  </div>
+<!-- floating button -->
 
+<div class="flBtn flBtn-position-br flBtn-size-medium drawer">
+	<input type="checkbox">
+	<a class="alink" href="#" data-role="main">
+		<i class="fas fa-hand-point-up"></i>		
+	</a>
+	<ul class="flBtn-first">
+		<li class="lilink"><a class="alink" href="/src/html/index.html" tooltip="Home"><i class="fas fa-home"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Contact us"><i class="fas fa-user-circle"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Virtual t"><i class="fas fa-vr-cardboard"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Reviews"><i class="fas fa-comment"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Portfolio"><i class="fas fa-briefcase"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Gallery"><i class="fas fa-images"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="About Us"><i class="fas fa-info"></i></a></li>
+	</ul>
+	<ul class="flBtn-second">
+		<li class="lilink"><a class="alink" href="#" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Twitter"><i class="fab fa-twitter"></i></a></li>
+		<li class="lilink"><a class="alink" href="#" tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
+	</ul>
+</div>
+<!-- <div class="container">
+<div class="endbutton">
+<div class="row">
+  <div class="col">
+   <a href="https://www.youtube.com/@KSRCEITES"> <i class='fab fa-youtube' style='font-size:48px;color:red'></i>
+    <h5 style="font-variant: small-caps; color: black;">Youtube</h5>   </a></div>
+  <div class="col">
+    <a href="/app-files/vt.html"> <i class="fas fa-vr-cardboard" style="font-size: 48px; text-decoration: none; color: black;"></i> 
+      <h5 style="font-variant: small-caps; color: black;">Virtual reality</h5>  </a>
+  </div>
+  <div class="col">
+    <a href=""><span class="material-icons" style="font-size: 48px; color: black;" >radio</span></a>
+        <h5 style="font-variant: small-caps;">Communication Radio</h5> </button>
+  </div>
+</div>
+</div></div></div> -->
+<!-- counter -->
+<!-- <div>Website visit count:</div>
+    <div class="website-counter"></div>
+    <button id="reset">Reset</button> -->
+    <!--  -->
+<!-- footer -->
 <footer class="container-fluid py-5 bg-dark bg-gradient" id="hov">
           <div class="row">
             <div class="col-12 col-md">
@@ -386,7 +410,7 @@
             </div>
           </div>
      <!-- contact form -->
-      
+<!--       
           <div class="container">
             <ul>
                 <a href="https://www.facebook.com/KSRCEofficial/" style="text-decoration: none;"><li><i class='fa fa-facebook'></i><span>Facebook</span></li></a>
@@ -394,7 +418,7 @@
                <a href="https://in.linkedin.com/company/ksrce"  style="text-decoration: none;"><li><i class='fa fa-linkedin'></i><span>Linkedin</span></li></a> 
                <a href="https://www.instagram.com/ksrceofficial/?hl=en" style="text-decoration: none;"><li><i class='fa fa-instagram'></i><span>Instagram</span></li></a>      
             </ul>
-        </div>   
+        </div>    -->
         <small class="d-block mb-3 text-center link-light">&copy;Copyright 2023-2040 <br> <p class="port">Site developed by<a href="/src/html/"></a></p></small> 
         </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>

@@ -83,6 +83,10 @@ body{
 #KSR_logo{
     width: 50%;
 }
+#DEPT_logo{
+ width: 48%;
+}
+
 #Ablock{
     width: 100%;
 }
@@ -162,8 +166,10 @@ body{
    
    #KSR_logo{
     width: 100%;
-
-   }
+}
+#DEPT_logo{
+  width: 100%;
+}
    #t2{
   font-size: 7px;
   font-weight: 700;
